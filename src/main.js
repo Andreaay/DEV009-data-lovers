@@ -16,6 +16,9 @@ for (let i = 0; i < 20; i++) {
       <h3>${pelicula.title}</h3>
       <p><strong>Director:</strong> ${pelicula.director}</p>
       <p><strong>Descripción:</strong> ${pelicula.description}</p>
+      <p><strong>Producer:</strong> ${pelicula.producer}</p>
+      <p><strong>Release date:</strong> ${pelicula.release_date}</p>
+      <p><strong>RT SCORE:</strong> ${pelicula.rt_score}</p>
       <img src="${pelicula.poster}" alt="${pelicula.title} poster" />
     </div>
   `;
