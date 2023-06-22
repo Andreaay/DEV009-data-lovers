@@ -7,4 +7,7 @@ for (let i = 0; i < 20; i++) {
     nuevoLiFor.appendChild(texto)
     listaPeliculasJs.appendChild(nuevoLiFor)
 }
-
+const peliculaCastle= document.querySelecto('ul')
+const li= document. createElement('li');
+li.textContent = "tittle "
+peliculaCastle. appendChild(li);
