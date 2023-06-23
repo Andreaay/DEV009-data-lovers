@@ -1,15 +1,26 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 import data from './data/ghibli/ghibli.js';
 //console.log(data.films[0].director);
-
-// HOME
-
-
 let peliculasList = document.querySelector("#peliculas-list");
-for (let i = 0; i < 22; i++) {
+let selectorTiempo = document.getElementById("tiempo")
+let selectorDirectores = document.getElementById("directores")
+
+viejas()
+
+document.getElementById("refrescar").addEventListener('click',limpiarPantalla)
+//funciones aqui abajo
+function directores() {
+  let directorSeleccionado=selectorDirectores.value 
+  limpiarPantalla()
+  alert("Acabas de seleccionar al director " +directorSeleccionado)
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+  }
+}
+selectorDirectores.addEventListener('change',directores)
+
+function viejas() {
+for (let i = 0; i < 20; i++) {
   let pelicula = data.films[i];
   let contenidoHTML = `
     <div class="pelicula">
@@ -30,6 +41,9 @@ for (let i = 0; i < 22; i++) {
   peliculaItem.innerHTML = contenidoHTML;
   peliculasList.appendChild(peliculaItem);
 }
-
+}
+function limpiarPantalla() {
+  peliculasList.innerHTML = ""; 
+}
 
 
