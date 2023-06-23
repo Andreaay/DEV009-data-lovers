@@ -47,6 +47,7 @@ function directores() {
 selectorDirectores.addEventListener('change',directores)
 
 function viejas() {
+    //función que despliega todas las películas en home, esta función nos servirá para modificar y hacer las historias de ususario
 for (let i = 0; i < 20; i++) {
   let pelicula = data.films[i];
   let contenidoHTML = `
