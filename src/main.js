@@ -1,12 +1,12 @@
 import data from './data/ghibli/ghibli.js';
-import { filterDirector } from "data.js";
+import { filterDirector } from "./data.js";
 //console.log(data.films[0].director);
 const peliculas = data.films;
 let peliculasList = document.querySelector("#peliculas-list");
 let selectorTiempo = document.getElementById("tiempo")
 let selectorDirectores = document.getElementById("directores")
 let selectorHayao = document.getElementById("Hayao Miyazaki")
-
+let hayaoList = document.querySelector("#hayao-list")
 function viejas(dataGhibli) {
   peliculasList.innerHTML = ""; 
     //función que despliega todas las películas en home, esta función nos servirá para modificar y hacer las historias de ususario
