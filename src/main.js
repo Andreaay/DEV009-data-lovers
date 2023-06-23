@@ -48,18 +48,18 @@ selectorDirectores.addEventListener('change', function () {
 
 
 
-function limpiarPantalla() {
-  peliculasList.innerHTML = ""; 
-}
+//function limpiarPantalla() {
+ peliculasList.innerHTML = ""; 
+//}
 
 
-document.getElementById("refrescar").addEventListener('click',limpiarPantalla)
+//document.getElementById("refrescar").addEventListener('click',limpiarPantalla)
 //funciones aqui abajo
-function directores() {
+//function directores() {
   //let directorSeleccionado=selectorDirectores.value 
   //limpiarPantalla()
- let directorHayao=selectorDirectores.value
- limpiarPantalla()
+ //let directorHayao=selectorDirectores.value
+ //limpiarPantalla()
 
 
   //alert("Acabas de seleccionar al director " +directorSeleccionado)
@@ -83,10 +83,9 @@ function directores() {
     let peliculaItem = document.createElement('li');
     peliculaItem.innerHTML = contenidoHTML;
     hayaoList.appendChild(peliculaItem);
-    if (pelicula.director === "Hayao Miyasaki "){
-    peliculaItem.style.display="block";}
-    else { 
-    return peliculaItem.style.display="none";
-    }
+   // if (pelicula.director === "Hayao Miyasaki "){
+    //peliculaItem.style.display="block";}
+    //else { 
+    //return peliculaItem.style.display="none";
+    //}
   }
-}
