@@ -37,7 +37,7 @@ viejas(peliculas);
 
 selectorDirectores.addEventListener('change', function () {
   const director = selectorDirectores.value
-  const dataFiltradaDirector = filterDirector(peliculas, director);
+  const dataFiltradaDirector = filterDirector(data, director);
   viejas(dataFiltradaDirector);
 })
 

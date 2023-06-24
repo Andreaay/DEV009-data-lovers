@@ -1,7 +1,7 @@
 // estas funciones son de ejemplo
 
 export const filterDirector = (data, option) => {
-  const filtro = //método filter;
+  const filtro = data.films.filter(pelicula => pelicula.director === option);
   console.log(filtro);
   return filtro;
 };
