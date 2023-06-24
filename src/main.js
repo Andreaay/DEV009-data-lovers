@@ -1,8 +1,13 @@
 import data from './data/ghibli/ghibli.js';
-import { filterDirector } from "./data.js"; 
+import { filterDirector } from "./data.js";
+import { ordenarPor } from "./data.js";
+
 const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
 const peliculasList = document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
+const selectorTiempo = document.getElementById("tiempo")
+mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
+
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
     peliculasList.innerHTML = "";
     console.log(parametro);
@@ -28,14 +33,25 @@ function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
         peliculasList.appendChild(peliculaItem);
     }
 }
-mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
+
 selectorDirectores.addEventListener('change', function () {//chenge lee si hay un cambio en el select
     const directorEscogido = selectorDirectores.value//Se guarda el valor del select
-if (directorEscogido==="directores") {
-    mostrarPeliculas(todasLasPeliculas);
-} 
-else {
-mostrarPeliculas(filterDirector(todasLasPeliculas,directorEscogido));
-}
-
+    if (directorEscogido === "directores") {
+        mostrarPeliculas(todasLasPeliculas);
+    }
+    else {
+        mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
+    }
 })
+selectorTiempo.addEventListener('change',function () {
+    const tiempoEscogido = selectorTiempo.value
+    console.log((ordenarPor(todasLasPeliculas,tiempoEscogido,true)))
+    
+})
+
+
+
+// even lsitener que lea els elector de tiiiiempo
+//constante donde guaeradar el valor
+// if sleciion viejo ordene por viejo
+//if sleccion nuevo oprderene popr nuevo
