@@ -5,13 +5,31 @@ export const filterDirector = (listaPeliculas, nombreDirectorSeleccionado) => { 
   return filtro;
 };
 
-// sort es ordernar 
-export const ordenarPor = (lista,campoOrdenar,direccion) =>{
+// sort es ordernar es una funcion pura
+export const ordenarPor = (listaPeliculas,campoOrdenar,direccion) => {//lista pelicualas son la 20 pelicuals campo es donde se desea ordenar(selct)
+  //dirección es el parametro que indica si debe de ser ascendente o desendente 
+  return listaPeliculas.sort((a,b) => {
+    if(a[campoOrdenar]< b[campoOrdenar]) {
+      return direccion ? -1 : 1;// signo interrogacion con dos puntos es un iif else miniatura se llama ternario
+    } else if (a[campoOrdenar]> b[campoOrdenar]) {
+      return direccion ? 1 : -1;
+    }
+    return 0;
+  });
+};
   
 
 
-  return("Hola ke ase")
-}
+
+
+
+
+  
+  //const tiempo =listaPeliculas.sort((direccion ) =>{
+
+  
+  //return tiempo (campoOrdenar )
+
 
 export const anotherExample = () => {
   return 'OMG';
