@@ -20,6 +20,12 @@ export const ordenarPor = (listaPeliculas,campoOrdenar,direccion) => {//lista pe
   
   });
 };
+
+export const filterPoster = (data) => {
+  const posters = data.films.filter(pelicula => pelicula.poster);
+  return posters.map(pelicula => pelicula.poster);
+};
+
 export const anotherExample = () => {
   return 'OMG';
 };

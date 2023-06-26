@@ -109,9 +109,13 @@ selectorCalificacion.addEventListener('change', function () {
     }
 })
 //función para botón de posters 
-selectorPoster.addEventListener('change', function (){
-  const allPosters = filterPoster();
-  console.log((allPosters));
+selectorPoster.addEventListener('change', function () {
+  const posters = filterPoster(data);
+  for (let i = 0; i < posters.length; i++) {
+    const img = document.createElement('img');
+    img.src = posters[i];
+    document.body.appendChild(img);
+  }
 });
 
 
