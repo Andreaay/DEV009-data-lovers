@@ -112,12 +112,11 @@ selectorCalificacion.addEventListener('change', function () {
 //función para botón de posters 
 selectorPoster.addEventListener('click', function () {
   const posters = filterPoster(data);
+  peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
   for (let i = 0; i < posters.length; i++) {
     const img = document.createElement('img');
     img.src = posters[i];
-    let todosLosPosters = document.createElement('li');
-    todosLosPosters.innerHTML = contenidoHTML;
-    document.body.appendChild(img);
+    peliculasList.appendChild(img);
   }
 });
 
