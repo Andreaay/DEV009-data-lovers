@@ -13,6 +13,13 @@ export const ordenarPor = (lista,campoOrdenar,direccion) =>{
   return("Hola ke ase")
 }
 
+//filter para botón de posters
+export const filterPoster = () => {
+const posters = data.films.map(pelicula => pelicula.poster);
+return posters;
+}
+
+
 export const anotherExample = () => {
   return 'OMG';
 };
