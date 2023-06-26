@@ -11,6 +11,7 @@ const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")
 const selectorPoster = document.getElementById("posters")
+const flyersButton = document.getElementById("flyers-button")
 const todosLosPosters = data.poster;
 
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
@@ -110,7 +111,7 @@ selectorCalificacion.addEventListener('change', function () {
     }
 })
 //función para botón de posters 
-selectorPoster.addEventListener('click', function () {
+flyersButton.addEventListener('click', function () {
   const posters = filterPoster(data);
   peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
   for (let i = 0; i < posters.length; i++) {
