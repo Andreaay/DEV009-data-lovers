@@ -31,6 +31,13 @@ export const ordenarPor = (listaPeliculas,campoOrdenar,direccion) => {//lista pe
   //return tiempo (campoOrdenar )
 
 
+//filter para botón de posters
+export const filterPoster = () => {
+const posters = data.films.map(pelicula => pelicula.poster);
+return posters;
+}
+
+
 export const anotherExample = () => {
   return 'OMG';
 };
