@@ -10,10 +10,9 @@ const peliculasList = document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")
-
-
 const selectorPoster = document.getElementById("posters")
 const todosLosPosters = data.poster;
+
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
 
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
@@ -85,7 +84,9 @@ selectorDirectores.addEventListener('change', function () {//change lee si hay u
     else {
         mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
     }
+  })
 })
+
 
 selectorTiempo.addEventListener('change', function () {
     const tiempoEscogido = selectorTiempo.value
@@ -109,11 +110,13 @@ selectorCalificacion.addEventListener('change', function () {
     }
 })
 //función para botón de posters 
-selectorPoster.addEventListener('change', function () {
+selectorPoster.addEventListener('click', function () {
   const posters = filterPoster(data);
   for (let i = 0; i < posters.length; i++) {
     const img = document.createElement('img');
     img.src = posters[i];
+    let todosLosPosters = document.createElement('li');
+    todosLosPosters.innerHTML = contenidoHTML;
     document.body.appendChild(img);
   }
 });
