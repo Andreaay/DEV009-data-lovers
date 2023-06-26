@@ -1,6 +1,7 @@
 import data from './data/ghibli/ghibli.js';
 import { filterDirector } from "./data.js";
 import { ordenarPor } from "./data.js";
+import { filterPoster } from './data.js';
 
 const botonHome = document.getElementById("home-button")
 const botonPersonajes = document.getElementById("personajes-button")
@@ -11,6 +12,8 @@ const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")
 
 
+const selectorPoster = document.getElementById("posters")
+const todosLosPosters = data.poster;
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
 
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
@@ -74,6 +77,7 @@ botonPersonajes.addEventListener('click', function () {//chenge lee si hay unclc
 })  
 
 selectorDirectores.addEventListener('change', function () {//chenge lee si hay un cambio en el select
+selectorDirectores.addEventListener('change', function () {//change lee si hay un cambio en el select
     const directorEscogido = selectorDirectores.value//Se guarda el valor del select
     if (directorEscogido === "directores") {
         mostrarPeliculas(todasLasPeliculas);
@@ -104,8 +108,15 @@ selectorCalificacion.addEventListener('change', function () {
         mostrarPeliculas(( ordenarPor(todasLasPeliculas,"rt_score",true)))
     }
 })
+//función para botón de posters 
+selectorPoster.addEventListener('change', function (){
+  const allPosters = filterPoster();
+  console.log((allPosters));
+});
 
-// even lsitener que lea els elector de tiiiiempo
-//constante donde guaeradar el valor
-// if sleciion viejo ordene por viejo
-//if sleccion nuevo oprderene popr nuevo
+
+
+// even listener que lea els elector de tiempo
+//constante donde guardar el valor
+// if selección viejo ordena por viejo
+//if selección nuevo ordena por nuevo
