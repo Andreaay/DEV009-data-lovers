@@ -84,7 +84,7 @@ selectorDirectores.addEventListener('change', function () {//change lee si hay u
     else {
         mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
     }
-  })
+    })
 })
 
 
