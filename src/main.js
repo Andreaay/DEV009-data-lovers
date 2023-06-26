@@ -95,7 +95,7 @@ selectorTiempo.addEventListener('change', function () {
         mostrarPeliculas(( ordenarPor(todasLasPeliculas,"title",false)))
     }
 })
-
+console.log(todasLasPeliculas)
 selectorCalificacion.addEventListener('change', function () {
     const calificacionEscogido = selectorCalificacion.value
     if (calificacionEscogido == "mejor") {
