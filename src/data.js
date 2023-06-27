@@ -6,30 +6,40 @@ export const filterDirector = (listaPeliculas, nombreDirectorSeleccionado) => { 
 };
 
 // sort es ordernar es una funcion pura
-export const ordenarPorNumeros = (listaPeliculas,campoOrdenar,direccion) => {//lista pelicualas son la 20 pelicuals campo es donde se desea ordenar(selct)
+export const sortAlphabeticYear = (listaPeliculas,option) => {//lista pelicualas son la 20 pelicuals campo es donde se desea ordenar(selct)
+console.log("click2")
+  //dirección es el parametro que indica si debe de ser ascendente o desendente 
+  const resultSort= listaPeliculas.sort((a,b) => {
+    console.log(sort)
+    if (option === "nuevas"){
+      console.log(option)
+      return parseInt(a.release_date)< parseInt(b.release_date)
+    } else if (option ==="viejas"){
+      console.log(option)
+    return parseInt(a.release_date)>parseInt( b.release_date)
+    } else if (option === "alfabeto"){
+      console.log(option)
+      return a.title< b.title
+    } else{ 
+      console.log(option)
+      return a.title> b.title
+    }
+  
+  
+  });
+  return resultSort;
+};
 
+export const ordenarPorNumeros = (listaPeliculas,campoOrdenar,direccion) => {//lista pelicualas son la 20 pelicuals campo es donde se desea ordenar(selct)
   //dirección es el parametro que indica si debe de ser ascendente o desendente 
   return listaPeliculas.sort((a,b) => {
-    console.log(typeof a[campoOrdenar])
     if (parseInt(a[campoOrdenar])< parseInt(b[campoOrdenar])) {
     return direccion ? -1 : 1;// signo interrogacion con dos puntos es un iif else miniatura se llama ternario
     } else if (parseInt(a[campoOrdenar])>parseInt( b[campoOrdenar])) {
     return direccion ? 1 : -1;
-    }
-    return 0;
+  }
+  return 0;
   
-  });
-};
-
-export const ordenarPorString = (listaPeliculas,campoOrdenar,direccion) => {//lista pelicualas son la 20 pelicuals campo es donde se desea ordenar(selct)
-  //dirección es el parametro que indica si debe de ser ascendente o desendente 
-  return listaPeliculas.sort((a,b) => {
-    if (a[campoOrdenar]< b[campoOrdenar]) {
-    return direccion ? -1 : 1;// signo interrogacion con dos puntos es un iif else miniatura se llama ternario
-    } else if (a[campoOrdenar]> b[campoOrdenar]) {
-    return direccion ? 1 : -1;
-    }
-    return 0;
   });
 };
 
