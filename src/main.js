@@ -10,7 +10,7 @@ const todasLasPeliculas = data.films;// la constante donde guardamos los 20 obje
 const peliculasList= document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
-const selectorCalificacion = document.getElementById("calificaciones")
+const selectorCalificacion = document.getElementById("calificacion
 const flyersButton = document.getElementById("flyers-Button")
 
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
@@ -96,9 +96,9 @@ selectorTiempo.addEventListener('change', function () {
     } else if (tiempoEscogido == "nuevas") {
         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
     } else if (tiempoEscogido == "alfabeto") {
-        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
-    } else if (tiempoEscogido == "alfabetoReversa"){
         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
+    } else if (tiempoEscogido == "alfabetoReversa"){
+        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
     }
 })
 

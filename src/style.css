@@ -12,7 +12,11 @@ body{
     padding: 0;
     margin: 0;
 }
-
+ section{
+    height: 50px ;
+    width: 100px;
+   
+ }
 li{
     border: 4px solid black;
     background-color: rgba(57, 94, 44, 0.739);
@@ -22,17 +26,18 @@ li{
     padding: 10px;
     opacity:.7;
     margin: 80px 10px;
-    
     float:left;
     list-style: none;
     font-size: 16px;
     }
 header{
+    display: flex;
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
+   
     justify-content: space-around;
     transition: 0.7s;
     padding: 30px 20px;
@@ -46,10 +51,13 @@ button{
     margin: 3px;
     background-color: #9d655a;
     border-radius: 10px;
+    float: left;
 }
 select{
     background-color: #b55b46;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 img{
     border: solid #647390;
@@ -65,5 +73,6 @@ img{
     margin-top: 100px;
     padding: 20px;
     margin: 50px;
+    float: right;
 } 
 /*https://64.media.tumblr.com/de21e3f52f7c389e102919e84c7c2929/ed26108e7bdb11a7-f0/s1280x1920/7bb8520708d2c1d7d9fc428bac443016960517b4.jpg
