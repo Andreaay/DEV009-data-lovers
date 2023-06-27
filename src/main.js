@@ -10,9 +10,7 @@ const peliculasList = document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")
-const selectorPoster = document.getElementById("posters")
-const flyersButton = document.getElementById("flyers-button")
-const todosLosPosters = data.poster;
+const flyersButton = document.getElementById("flyers-Button")
 
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
 
