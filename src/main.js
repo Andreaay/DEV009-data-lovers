@@ -1,6 +1,7 @@
 import data from './data/ghibli/ghibli.js';
 import { filterDirector } from "./data.js";
-import { ordenarPor } from "./data.js";
+import { ordenarPorString } from "./data.js";
+import { ordenarPorNumeros } from "./data.js";
 import { filterPoster } from './data.js';
 
 const botonHome = document.getElementById("home-button")
@@ -83,29 +84,30 @@ selectorDirectores.addEventListener('change', function () {//change lee si hay u
     else {
         mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
     }
-  })
+    })
 })
 
 
 selectorTiempo.addEventListener('change', function () {
     const tiempoEscogido = selectorTiempo.value
+    
     if (tiempoEscogido == "viejas") {
-        mostrarPeliculas((ordenarPor(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
+        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
     } else if (tiempoEscogido == "nuevas") {
-        mostrarPeliculas(( ordenarPor(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
+        mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
     } else if (tiempoEscogido == "alfabeto") {
-        mostrarPeliculas(( ordenarPor(todasLasPeliculas,"title",true)))
-    } else {
-        mostrarPeliculas(( ordenarPor(todasLasPeliculas,"title",false)))
+        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
+    } else if (tiempoEscogido == "alfabetoReversa"){
+        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
     }
 })
-console.log(todasLasPeliculas)
+
 selectorCalificacion.addEventListener('change', function () {
     const calificacionEscogido = selectorCalificacion.value
     if (calificacionEscogido == "mejor") {
-        mostrarPeliculas((ordenarPor(todasLasPeliculas, "rt_score",false)))//Sirve para indicarle asl sort si es ascendente en true
+        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score",false)))//Sirve para indicarle asl sort si es ascendente en true
     } else {
-        mostrarPeliculas(( ordenarPor(todasLasPeliculas,"rt_score",true)))
+        mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"rt_score",true)))
     }
 })
 //función para botón de posters 

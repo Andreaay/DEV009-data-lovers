@@ -1,16 +1,32 @@
 body{
 background-image: url("https://64.media.tumblr.com/de21e3f52f7c389e102919e84c7c2929/ed26108e7bdb11a7-f0/s1280x1920/7bb8520708d2c1d7d9fc428bac443016960517b4.jpg");
+  color: rgba(182, 194, 203, 0.895);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 120%;
+    min-height: 100%;
+    z-index: -1000;
+    padding: 0;
+    margin: 0;
+}
+
 li{
-    border: 2px solid black;
-    height: 450px ;
+    border: 4px solid black;
+    background-color: rgba(57, 94, 44, 0.739);
+    color: #fffbaf;
+    height: 550px ;
     width: 500px;
-    padding: 5px;
-    margin: 20px;
-    margin-top: 100px;
+    padding: 10px;
+    opacity:.7;
+    margin: 80px 10px;
+    
     float:left;
     list-style: none;
-    font-size: large;
+    font-size: 16px;
     }
 header{
     position: fixed;
@@ -21,7 +37,7 @@ header{
     justify-content: space-around;
     transition: 0.7s;
     padding: 30px 20px;
-    background-image: url("https://64.media.tumblr.com/5d5756d27f4dd6ca2dcc6a72a881834e/ed26108e7bdb11a7-39/s1280x1920/568573351e79e6f7b2071a93f626c27887e17646.jpg");
+    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /*display:felx se utiliza tambien para flexbox*/
@@ -51,3 +67,4 @@ img{
     padding: 20px;
     margin: 50px;
 } 
+/*https://64.media.tumblr.com/de21e3f52f7c389e102919e84c7c2929/ed26108e7bdb11a7-f0/s1280x1920/7bb8520708d2c1d7d9fc428bac443016960517b4.jpg
