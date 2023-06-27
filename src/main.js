@@ -6,7 +6,7 @@ import { filterPoster } from './data.js';
 const botonHome = document.getElementById("home-button")
 const botonPersonajes = document.getElementById("personajes-button")
 const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
-const peliculasList = document.querySelector("#peliculas-list");//Home
+const peliculasList= document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")
@@ -115,6 +115,7 @@ flyersButton.addEventListener('click', function () {
   for (let i = 0; i < posters.length; i++) {
     const img = document.createElement('img');
     img.src = posters[i];
+    img.classList.add('flyer')
     peliculasList.appendChild(img);
   }
 });
