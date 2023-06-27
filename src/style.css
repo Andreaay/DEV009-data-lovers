@@ -1,5 +1,9 @@
+body{
+background-image: url("https://64.media.tumblr.com/de21e3f52f7c389e102919e84c7c2929/ed26108e7bdb11a7-f0/s1280x1920/7bb8520708d2c1d7d9fc428bac443016960517b4.jpg");
+style: "color:white;"
+}
 li{
-    border: 2px solid red;
+    border: 2px solid black;
     height: 450px ;
     width: 500px;
     padding: 5px;
@@ -7,6 +11,7 @@ li{
     margin-top: 100px;
     float:left;
     list-style: none;
+    font-size: large;
     }
 header{
     position: fixed;
@@ -17,19 +22,33 @@ header{
     justify-content: space-around;
     transition: 0.7s;
     padding: 30px 20px;
-    background-color: #647390;
+    background-image: url("https://64.media.tumblr.com/5d5756d27f4dd6ca2dcc6a72a881834e/ed26108e7bdb11a7-39/s1280x1920/568573351e79e6f7b2071a93f626c27887e17646.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     /*display:felx se utiliza tambien para flexbox*/
 }
 button{
     padding: 5px;
     margin: 3px;
+    background-color: #9d655a;
+    border-radius: 10px;
+}
+select{
+    background-color: #b55b46;
+    border-radius: 10px;
 }
 img{
     border: solid #647390;
-        width: 100px;
-        height: 100x;
+        width: 200px;
+        height: 300x;
         margin: 15px;
         padding: 10px;
         float: left ;
 }
-
+.flyer{
+    width: 400px;
+    height: 350x;
+    margin-top: 100px;
+    padding: 20px;
+    margin: 50px;
+} 
