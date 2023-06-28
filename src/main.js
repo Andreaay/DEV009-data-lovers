@@ -1,19 +1,16 @@
 import data from './data/ghibli/ghibli.js';
-import { filterDirector } from "./data.js";
-import { ordenarPorString } from "./data.js";
-import { ordenarPorNumeros } from "./data.js";
-import { filterPoster } from './data.js';
+import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster } from "./data.js";
 
+const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
 const botonHome = document.getElementById("home-button")
 const botonPersonajes = document.getElementById("personajes-button")
-const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
 const peliculasList= document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
-const selectorCalificacion = document.getElementById("calificacion
+const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
 const flyersButton = document.getElementById("flyers-Button")
 
-mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
+
 
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
     peliculasList.innerHTML = "";
@@ -40,6 +37,7 @@ function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
         peliculasList.appendChild(peliculaItem);
     }
 }
+mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
 
 function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
     peliculasList.innerHTML = "";
@@ -65,7 +63,7 @@ function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
     }
 }
 
-// Even Listeners
+// Event Listeners
 
 botonHome.addEventListener('click', function () {//chenge lee si hay unclcik en home
     mostrarPeliculas(todasLasPeliculas);
@@ -75,7 +73,7 @@ botonPersonajes.addEventListener('click', function () {//chenge lee si hay unclc
     mostrarPersonaje(todasLasPeliculas);
 })  
 
-selectorDirectores.addEventListener('change', function () {//chenge lee si hay un cambio en el select
+
 selectorDirectores.addEventListener('change', function () {//change lee si hay un cambio en el select
     const directorEscogido = selectorDirectores.value//Se guarda el valor del select
     if (directorEscogido === "directores") {
@@ -84,22 +82,30 @@ selectorDirectores.addEventListener('change', function () {//change lee si hay u
     else {
         mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
     }
-    })
 })
 
 
 selectorTiempo.addEventListener('change', function () {
-    const tiempoEscogido = selectorTiempo.value
-    
-    if (tiempoEscogido == "viejas") {
+    console.log ("click")
+    const selectorEscogido = selectorTiempo.value
+    if (selectorEscogido === "all"){
+        mostrarPeliculas(todasLasPeliculas);
+    } else {
+        mostrarPeliculas(sortAlphabeticYear(todasLasPeliculas, selectorEscogido))
+    }
+   /* if (tiempoEscogido == "viejas") {
         mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
     } else if (tiempoEscogido == "nuevas") {
         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
     } else if (tiempoEscogido == "alfabeto") {
         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
+<<<<<<< HEAD
     } else if (tiempoEscogido == "alfabetoReversa"){
         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
     }
+//=======
+    }*/
+//>>>>>>> 9dae92db875455de8b19bcfa7008f81545e85c63
 })
 
 selectorCalificacion.addEventListener('change', function () {

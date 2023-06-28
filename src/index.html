@@ -11,15 +11,14 @@
   <img class="bg" src="https://c4.wallpaperflare.com/wallpaper/464/132/911/worms-eye-view-nature-studio-ghibli-sunlight-wallpaper-preview.jpg" alt="">
   <header>
     <h1>Studio Ghibli</h1>
-    <section><button id="home-button"> HOME</button>
-    Sort by Date
+    <button id="home-button"> HOME</button>
     <select id="tiempo">
+      <option value="all" > Ordenar </option>
       <option value="alfabeto">Alphabetical order</option>
       <option value="alfabetoReversa">Alphabetical Reverse</option>
       <option value="nuevas">New</option>
       <option value="viejas">Old</option>
     </select>
-    Select by Director
     <select id="directores">
       <option value="directores" selected>Directors</option>
       <option value="Hayao Miyazaki">Hayao Miyasaki</option>
@@ -29,14 +28,13 @@
       <option value="Gorō Miyazaki">Gorō Miyazaki</option>
       <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
     </select>
-    Score
     <select id="calificaciones">
       <option value="mejor">Best Movies</option>
       <option value="peor">Worst Movies</option>
     </select>
     <button class="flyers" id="flyers-Button"> Posters </button>
     <button class="personajesPrincipales" id="personajes-button"> Main Characters </button>
-  </section>
+  
   </header>
   <ol id="peliculas-list"></ol>
   <ol id="hayao-list"></ol>
