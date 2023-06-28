@@ -7,7 +7,7 @@ const botonPersonajes = document.getElementById("personajes-button")
 const peliculasList= document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
-const selectorCalificacion = document.getElementById("calificaciones")
+const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
 const flyersButton = document.getElementById("flyers-Button")
 
 
@@ -98,10 +98,14 @@ selectorTiempo.addEventListener('change', function () {
     } else if (tiempoEscogido == "nuevas") {
         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
     } else if (tiempoEscogido == "alfabeto") {
-        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
-    } else if (tiempoEscogido == "alfabetoReversa"){
         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
+<<<<<<< HEAD
+    } else if (tiempoEscogido == "alfabetoReversa"){
+        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
+    }
+//=======
     }*/
+//>>>>>>> 9dae92db875455de8b19bcfa7008f81545e85c63
 })
 
 selectorCalificacion.addEventListener('change', function () {

@@ -4,28 +4,21 @@ export const filterDirector = (listaPeliculas, nombreDirectorSeleccionado) => { 
   });
   return filtro;
 };
-
+//console log hizo que dejara de funcionar todo 
 // sort es ordernar es una funcion pura
 export const sortAlphabeticYear = (listaPeliculas,option) => {//lista pelicualas son la 20 pelicuals campo es donde se desea ordenar(selct)
-console.log("click2")
+
   //dirección es el parametro que indica si debe de ser ascendente o desendente 
   const resultSort= listaPeliculas.sort((a,b) => {
-    console.log(sort)
     if (option === "nuevas"){
-      console.log(option)
-      return parseInt(a.release_date)< parseInt(b.release_date)
+    return parseInt(a.release_date)< parseInt(b.release_date)//console log hizo que dejara de funcionar todo 
     } else if (option ==="viejas"){
-      console.log(option)
-    return parseInt(a.release_date) > parseInt( b.release_date)
+    return parseInt(a.release_date) > parseInt( b.release_date)//console log hizo que dejara de funcionar todo 
     } else if (option === "alfabeto"){
-      console.log(option)
-      return a.title< b.title
+    return a.title> b.title
     } else{ 
-      console.log(option)
-      return a.title> b.title
+    return a.title< b.title
     }
-  
-  
   });
   return resultSort;
 };
