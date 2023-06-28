@@ -99,13 +99,13 @@ selectorTiempo.addEventListener('change', function () {
         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
     } else if (tiempoEscogido == "alfabeto") {
         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
-<<<<<<< HEAD
+
     } else if (tiempoEscogido == "alfabetoReversa"){
         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
     }
-//=======
+
     }*/
-//>>>>>>> 9dae92db875455de8b19bcfa7008f81545e85c63
+
 })
 
 selectorCalificacion.addEventListener('change', function () {
