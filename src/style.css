@@ -1,3 +1,7 @@
+
+
+
+
 body{
   color:rgb(56, 150, 158);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,11 +35,12 @@ li{
     font-size: 16px;
     }
 
-    header{
+    .titulo span{
     text-align: center;
     
     
     }
+    
 main{
     position: fixed; 
     top: 0;
@@ -78,4 +83,7 @@ img{
     margin: 50px;
     float: right;
 } 
+
+
+
 /*https://64.media.tumblr.com/de21e3f52f7c389e102919e84c7c2929/ed26108e7bdb11a7-f0/s1280x1920/7bb8520708d2c1d7d9fc428bac443016960517b4.jpg
