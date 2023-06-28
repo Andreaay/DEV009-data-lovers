@@ -16,7 +16,7 @@ console.log("click2")
       return parseInt(a.release_date)< parseInt(b.release_date)
     } else if (option ==="viejas"){
       console.log(option)
-    return parseInt(a.release_date)>parseInt( b.release_date)
+    return parseInt(a.release_date) > parseInt( b.release_date)
     } else if (option === "alfabeto"){
       console.log(option)
       return a.title< b.title
