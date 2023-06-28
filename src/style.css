@@ -3,8 +3,9 @@
 
 
 body{
-  color:rgb(56, 150, 158);
+  color:white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
 }
 /*.bg {
     position: fixed; 
@@ -37,35 +38,41 @@ li{
 
     .titulo span{
     text-align: center;
-    
-    
+    background-color: #eea382;
+    letter-spacing: 15px;
+    font-size: 1.4em;
+    position: fixed;
+    height: 40px;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
     }
+
     
 main{
     position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 28px;
+    height: 25px;
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
     padding: 30px 20px;
-    margin: 55px 0px;
-    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    margin: 38px 0;
 }
 button{
     padding: 5px;
     margin: 3px;
-    background-color: #b55b46;
-    border-radius: 8px;
+    height: 2em;
+    background-color: #CB7723;
 }
 select{
-    background-color: #b55b46;
-    border-radius: 8px;
+    background-color: #CB7723;
 }
 img{
     border: solid #647390;
@@ -83,7 +90,3 @@ img{
     margin: 50px;
     float: right;
 } 
-
-
-
-/*https://64.media.tumblr.com/de21e3f52f7c389e102919e84c7c2929/ed26108e7bdb11a7-f0/s1280x1920/7bb8520708d2c1d7d9fc428bac443016960517b4.jpg
