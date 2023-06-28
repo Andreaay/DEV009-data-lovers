@@ -13,7 +13,7 @@ export const sortAlphabeticYear = (listaPeliculas,option) => {//lista pelicualas
     if (option === "nuevas"){
     return parseInt(a.release_date)< parseInt(b.release_date)
     } else if (option ==="viejas"){
-    return parseInt(a.release_date)>parseInt( b.release_date)
+    return parseInt(a.release_date) > parseInt( b.release_date)//console log hizo que dejara de funcionar todo 
     } else if (option === "alfabeto"){
     return a.title> b.title
     } else{ 
