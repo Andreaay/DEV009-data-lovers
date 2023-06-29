@@ -1,27 +1,89 @@
-
-
-
-
-body{
-  color:white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0;
+:root{
+    --coral: #eea382;
+    --ladrillo: #b55b46;
+    --tierra: #9d655a;
+    --gris: #647390;
+    --azul:#1F3B4D;
+    --verdeclaro: #017374;
+    --oliva: #728639;
+    --verdefuerte: #014D4E;
+    --naranja: #CB7723;
 }
-/*.bg {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    min-width: 120%;
-    min-height: 100%;
-    z-index: -1000;
-    padding: 0;
+
+
+
+
+
+display-block
+body{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     margin: 0;
-}*/
- .section2{
-    height: 50px ;
-    width: 100px;
- }
-li{
+  }
+  /*.bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 120%;
+      min-height: 100%;
+      z-index: -1000;
+      padding: 0;
+      margin: 0;
+  }*/
+   .section2{
+      height: 50px ;
+      width: 100px;
+   }
+header{
+      text-align: center;
+      background-color: #EEA382;
+      letter-spacing: 15px;
+      font-size: 1.4em;
+      position: fixed;
+      height: 40px;
+      padding: 10px;
+      left: 0;
+      top: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
+      }
+nav{
+    font-size: 1.4em;
+    background-color: #014D4E;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      display: flex;
+      margin: 45px 0px;
+  }
+  button{
+      padding: 5px;
+      margin: 3px;
+      height: 2em;
+      background-color: #CB7723;
+      
+  }
+  select{
+      background-color: #CB7723;
+      padding: 5px;
+      margin: 3px;
+      height: 2em;
+      
+  ;
+  }
+  img{
+      border: solid #CB7723;
+          width: 150px;
+          height: 250x;
+          margin: 15px;
+          padding: 10px;
+          float: right ;
+  }
+  li{
     float: left;
     border: 4px solid black;
     background-color: #647390;
@@ -29,64 +91,32 @@ li{
     height: 450px ;
     width: 500px;
     padding: 10px;
-    opacity:.7;
     margin: 100px 20px;
     text-align: right;
     list-style: none;
     font-size: 16px;
-    }
-
-    .titulo span{
-    text-align: center;
-    background-color: #eea382;
-    letter-spacing: 15px;
-    font-size: 1.4em;
-    position: fixed;
-    height: 40px;
-    padding: 10px;
-    left: 0;
-    top: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
-    }
-
-    
-main{
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 25px;
-    display: flex;
+    }    
+  .flyer{
+      width: 400px;
+      height: 350x;
+      margin-top: 100px;
+      padding: 20px;
+      margin: 50px;
+      float: right;
+  }
+.navegacion-principal{
+    font-size: 1.4em; 
+    text-decoration: none;
     justify-content: space-around;
-    transition: 0.7s;
-    padding: 30px 20px;
-    margin: 38px 0;
+    font-size: 2rem;
+    font-weight: 700;
+
+
 }
-button{
-    padding: 5px;
-    margin: 3px;
-    height: 2em;
-    background-color: #CB7723;
+.navegacion-principal a:hover{
+background-color: #b55b46;
+padding: 17px 20px;
 }
-select{
-    background-color: #CB7723;
-}
-img{
-    border: solid #647390;
-        width: 150px;
-        height: 250x;
-        margin: 15px;
-        padding: 10px;
-        float: right ;
-}
-.flyer{
-    width: 400px;
-    height: 350x;
-    margin-top: 100px;
-    padding: 20px;
-    margin: 50px;
-    float: right;
-} 
+/* .contenedor{
+    
+} */
