@@ -4,7 +4,7 @@ import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster } f
 const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
 const botonHome = document.getElementById("home-button")
 const botonPersonajes = document.getElementById("personajes-button")
-const peliculasList= document.querySelector("#peliculas-list");//Home
+const peliculasList = document.querySelector("#peliculas-list");//Home
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
@@ -14,7 +14,7 @@ const flyersButton = document.getElementById("flyers-Button")
 
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
     peliculasList.innerHTML = "";
-    
+
     for (let i = 0; i < parametro.length; i++) {
         let pelicula = parametro[i];
         let contenidoHTML = `
@@ -41,7 +41,7 @@ mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, mu
 
 function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
     peliculasList.innerHTML = "";
-    
+
     for (let i = 0; i < parametro.length; i++) {
         let pelicula = parametro[i];
         let contenidoHTML = `
@@ -65,13 +65,13 @@ function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
 
 // Event Listeners
 
-botonHome.addEventListener('click', function () {//chenge lee si hay unclcik en home
+botonHome.addEventListener('click', function () {//change lee si hay un clcik en home
     mostrarPeliculas(todasLasPeliculas);
-})  
+})
 
-botonPersonajes.addEventListener('click', function () {//chenge lee si hay unclcik en home
+botonPersonajes.addEventListener('click', function () {//change lee si hay un clcik en home
     mostrarPersonaje(todasLasPeliculas);
-})  
+})
 
 
 selectorDirectores.addEventListener('change', function () {//change lee si hay un cambio en el select
@@ -86,51 +86,51 @@ selectorDirectores.addEventListener('change', function () {//change lee si hay u
 
 
 selectorTiempo.addEventListener('change', function () {
-    console.log ("click")
+    console.log("click")
     const selectorEscogido = selectorTiempo.value
-    if (selectorEscogido === "all"){
+    if (selectorEscogido === "all") {
         mostrarPeliculas(todasLasPeliculas);
     } else {
         mostrarPeliculas(sortAlphabeticYear(todasLasPeliculas, selectorEscogido))
     }
-   /* if (tiempoEscogido == "viejas") {
-        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
-    } else if (tiempoEscogido == "nuevas") {
-        mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
-    } else if (tiempoEscogido == "alfabeto") {
-        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
-
-    } else if (tiempoEscogido == "alfabetoReversa"){
-        mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
-    }
-
-    }*/
+    /* if (tiempoEscogido == "viejas") {
+         mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
+     } else if (tiempoEscogido == "nuevas") {
+         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
+     } else if (tiempoEscogido == "alfabeto") {
+         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
+ 
+     } else if (tiempoEscogido == "alfabetoReversa"){
+         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
+     }
+ 
+     }*/
 
 })
 
 selectorCalificacion.addEventListener('change', function () {
     const calificacionEscogido = selectorCalificacion.value
     if (calificacionEscogido == "mejor") {
-        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score",false)))//Sirve para indicarle asl sort si es ascendente en true
+        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score", false)))//Sirve para indicarle asl sort si es ascendente en true
     } else {
-        mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"rt_score",true)))
+        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score", true)))
     }
 })
 //función para botón de posters 
 flyersButton.addEventListener('click', function () {
-  const posters = filterPoster(data);
-  peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
-  for (let i = 0; i < posters.length; i++) {
-    const img = document.createElement('img');
-    img.src = posters[i];
-    img.classList.add('flyer')
-    peliculasList.appendChild(img);
-  }
+    const posters = filterPoster(data);
+    peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
+    for (let i = 0; i < posters.length; i++) {
+        const img = document.createElement('img');
+        img.src = posters[i];
+        img.classList.add('flyer')
+        peliculasList.appendChild(img);
+    }
 });
 
 
 
-// even listener que lea els elector de tiempo
+// event listener que lea els elector de tiempo
 //constante donde guardar el valor
 // if selección viejo ordena por viejo
 //if selección nuevo ordena por nuevo

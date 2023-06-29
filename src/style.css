@@ -2,43 +2,15 @@ body{
   color:white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
+  background-color:#3c252b;
 }
-/*.bg {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    min-width: 120%;
-    min-height: 100%;
-    z-index: -1000;
-    padding: 0;
-    margin: 0;
-}*/
- .section2{
-    height: 50px ;
-    width: 100px;
- }
-li{
-    float: left;
-    border: 4px solid black;
-    background-color: #647390;
-    color: black;
-    height: 450px ;
-    width: 500px;
-    padding: 10px;
-    opacity:.7;
-    margin: 100px 20px;
-    text-align: right;
-    list-style: none;
-    font-size: 16px;
-    }
-
-    header{
+header{
     text-align: center;
     background-color: #eea382;
     letter-spacing: 15px;
-    font-size: 1.4em;
+    font-size: 1.9em;
     position: fixed;
-    height: 40px;
+    height: 50px;
     padding: 10px;
     left: 0;
     top: 0;
@@ -51,37 +23,60 @@ li{
 main{
     position: fixed; 
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50px;
+    right: 50px;
+    width: 85%;
     height: 25px;
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
     padding: 30px 20px;
-    margin: 38px 0;
+    margin: 45px 0;
 }
 button{
     padding: 5px;
     margin: 3px;
     height: 2em;
-    background-color: #CB7723;
+    background-color: #b4c8c0;
+    border-radius: 4px;   
 }
 select{
-    background-color: #CB7723;
+    background-color: #b4c8c0;
+    border-radius: 4px;
 }
+ .section2{
+    height: 50px ;
+    width: 100px;
+ }
+li{
+    float: left;
+    border: 4px solid #dcb761;
+    background-color: #b17261;
+    color: #1f2124;
+    height: 500px ;
+    width: 500px;
+    padding: 10px;
+    margin: 100px 20px;
+    text-align: left;
+    list-style: none;
+    font-size: 16px;
+    }
 img{
     border: solid #647390;
         width: 150px;
-        height: 250x;
+        height: 350x;
         margin: 15px;
         padding: 10px;
         float: right ;
 }
 .flyer{
-    width: 400px;
-    height: 350x;
-    margin-top: 100px;
+    width: 30%;
+    height: 300x;
     padding: 20px;
     margin: 50px;
-    float: right;
+    float: center;
 } 
+ol{
+    margin-top: 5rem;
+    width: 80;
+}
