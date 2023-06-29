@@ -20,18 +20,20 @@ header{
     background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
     }
 
-main{
+nav{
     position: fixed; 
     top: 0;
-    left: 50px;
-    right: 50px;
-    width: 85%;
+    left: 0;
+    right: 0;
+    width: 100%;
     height: 25px;
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
-    padding: 30px 20px;
+    padding: 15px 10px;
     margin: 45px 0;
+    margin-top: 4rem;
+    background-color:#b4c8c0;
 }
 button{
     padding: 5px;
@@ -39,10 +41,12 @@ button{
     height: 2em;
     background-color: #b4c8c0;
     border-radius: 4px;   
+    border: solid #4c0c24;
 }
 select{
-    background-color: #b4c8c0;
+    background-color:#b4c8c0;
     border-radius: 4px;
+    border: solid #4c0c24;
 }
  .section2{
     height: 50px ;
@@ -75,6 +79,7 @@ img{
     padding: 20px;
     margin: 50px;
     float: center;
+    justify-content: space-between;
 } 
 ol{
     margin-top: 5rem;
