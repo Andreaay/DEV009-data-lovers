@@ -2221,6 +2221,6 @@ describe('Tests de sortAlphabeticYear', () => {
     ]
     const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabetoReversa');
     expect(peliculasfiltradas). toEqual(resultadoEsperado)
-  }
+  });
 });
 

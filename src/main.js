@@ -1,6 +1,5 @@
 import data from './data/ghibli/ghibli.js';
 import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster } from "./data.js";
-
 const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
 const botonHome = document.getElementById("home-button")
 const botonPersonajes = document.getElementById("personajes-button")
@@ -45,7 +44,7 @@ function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
     for (let i = 0; i < parametro.length; i++) {
         let pelicula = parametro[i];
         let contenidoHTML = `
-    <div class="pelicula">
+    <div class="mostrarPersonaje">
     <section id= "section3" >
     <img src="${pelicula.people[0].img}" alt="${pelicula.people[0].name} poster" />
     </section>
