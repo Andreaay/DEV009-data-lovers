@@ -1,9 +1,108 @@
 import { filterDirector } from '../src/data.js';
 import { sortAlphabeticYear } from '../src/data.js';
-import { filterPoster } from '../src/data.js';
+import { filterPoster } from '../src/data.js'; 
+import { ordenarPorNumeros } from '../src/data.js'; 
 
-describe('Tests de filter director', () => {
-  it('test para validar todas las películas de Hayao Myazaki', () => {
+describe('Tests de sortAlphabeticYear', () => {
+  it('Test para filtrar las peliculas de la A a la Z', () => {
+    const peliculas = [
+      {title: 'Castle in the Sky'},
+      {title: 'My Neighbors the Yamadas'},
+      {title: 'Whisper of the Heart'}
+    ]
+    const resultadoEsperado =[
+      {title: 'Castle in the Sky'},
+      {title: 'My Neighbors the Yamadas'},
+      {title: 'Whisper of the Heart'}
+    ]
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabeto');
+    expect(peliculasfiltradas).toEqual(resultadoEsperado);
+  });
+  it('Test para filtrar las películas de la Z a la A', () => {
+    const peliculas =[
+      {title: 'Whisper of the Heart,'},
+      {title: 'The Wind Rises'},
+      {title: 'Castle in the Sky'}
+    ]
+    const resultadoEsperado =[
+      {title: 'Whisper of the Heart,'},
+      {title: 'The Wind Rises'},
+      {title: 'Castle in the Sky'}
+    ]
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabetoReversa');
+    expect(peliculasfiltradas). toEqual(resultadoEsperado)
+  });
+});
+
+describe('Tests de sortAlphabeticYear', () => {
+  it('Test para filtrar las peliculas de la más nueva a la más vieja', () => {
+    const peliculas = [
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      }
+    ]
+    const resultadoEsperado =[
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      }
+    ]
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'nuevas');
+    expect(peliculasfiltradas).toEqual(resultadoEsperado);
+  });
+  it('Test para filtrar las peliculas de la más vieja a la más nueva', () => {
+    const peliculas = [
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      }
+    ]
+    const resultadoEsperado =[
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      }
+    ];
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'viejas');
+    expect(peliculasfiltradas).toEqual(resultadoEsperado);
+  });
+});
+
+describe('Tests de filterDirector', () => {
+  it('Test para validar todas las películas de Hayao Myazaki', () => {
     const nombreDeDirector = 'Hayao Miyazaki'
     const dataSetDePeliculas = [{
       "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
@@ -474,7 +573,7 @@ describe('Tests de filter director', () => {
     }]
     expect(filterDirector( dataSetDePeliculas,nombreDeDirector)).toEqual(resultadoEsperado);
   });
-  it('test para validar todas las películas de Isao Takahata', () => {
+  it('Test para validar todas las películas de Isao Takahata', () => {
     const nombreDeDirector = 'Isao Takahata'
     const dataSetDePeliculas = [{
       "id": "1b67aa9a-2e4a-45af-ac98-64d6ad15b16c",
@@ -741,7 +840,7 @@ describe('Tests de filter director', () => {
     }]
     expect(filterDirector( dataSetDePeliculas,nombreDeDirector)).toEqual(resultadoEsperado);
   });
-  it('test para validar todas las películas de Yoshifumi Kondō', () => {
+  it('Test para validar todas las películas de Yoshifumi Kondō', () => {
     const nombreDeDirector = 'Yoshifumi Kondō'
     const dataSetDePeliculas = [{
       "id": "ff24da26-a969-4f0e-ba1e-a122ead6c6e3",
@@ -1120,7 +1219,7 @@ describe('Tests de filter director', () => {
     }]
     expect(filterDirector( dataSetDePeliculas,nombreDeDirector)).toEqual(resultadoEsperado);
   });
-  it('test para validar todas las películas de Hiroyuki Morita', () => {
+  it('Test para validar todas las películas de Hiroyuki Morita', () => {
     const nombreDeDirector = 'Hiroyuki Morita'
     const dataSetDePeliculas = [{
       "id": "90b72513-afd4-4570-84de-a56c312fdf81",
@@ -1491,7 +1590,7 @@ describe('Tests de filter director', () => {
     }]
     expect(filterDirector( dataSetDePeliculas,nombreDeDirector)).toEqual(resultadoEsperado);
   });
-  it('test para validar todas las películas de Gorō Miyazaki', () => {
+  it('Test para validar todas las películas de Gorō Miyazaki', () => {
     const nombreDeDirector = 'Gorō Miyazaki'
     const dataSetDePeliculas = [{
       "id": "45db04e4-304a-4933-9823-33f389e8d74d",
@@ -1823,7 +1922,7 @@ describe('Tests de filter director', () => {
     }]
     expect(filterDirector( dataSetDePeliculas,nombreDeDirector)).toEqual(resultadoEsperado);
   });
-  it('test para validar todas las películas de Hiromasa Yonebayashi', () => {
+  it('Test para validar todas las películas de Hiromasa Yonebayashi', () => {
     const nombreDeDirector = 'Hiromasa Yonebayashi'
     const dataSetDePeliculas = [{
       "id": "5fdfb320-2a02-49a7-94ff-5ca418cae602",
@@ -2195,100 +2294,69 @@ describe('Tests de filter director', () => {
   });
 });
 
-describe('Tests de sortAlphabeticYear', () => {
-  it('Test para filtrar las peliculas de la A a la Z', () => {
+describe('Tests para ordenarPorNumeros', () => {
+  it('Test para validar las películas de la mejor calificada a la peor', () => {
     const peliculas = [
-      {title: 'Castle in the Sky'},
-      {title: 'My Neighbors the Yamadas'},
-      {title: 'Whisper of the Heart'}
+      {
+        "title": "Only Yesterday",
+        "rt_score": "100",
+      },
+      {
+        "title": "Howl's Moving Castle",
+        "rt_score": "87",
+      },
+      {
+        "title": "Tales from Earthsea",
+        "rt_score": "41",
+      }
     ]
-    const resultadoEsperado =[
-      {title: 'Castle in the Sky'},
-      {title: 'My Neighbors the Yamadas'},
-      {title: 'Whisper of the Heart'}
+    const resultadoEsperado = [
+      {
+        "title": "Only Yesterday",
+        "rt_score": "100",
+      },
+      {
+        "title": "Howl's Moving Castle",
+        "rt_score": "87",
+      },
+      {
+        "title": "Tales from Earthsea",
+        "rt_score": "41",
+      }
     ]
-    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabeto');
+    const peliculasfiltradas = ordenarPorNumeros (peliculas, 'mejor');
     expect(peliculasfiltradas).toEqual(resultadoEsperado);
   });
-  it('Test para filtrar las películas de la Z a la A', () => {
-    const peliculas =[
-      {title: 'Whisper of the Heart,'},
-      {title: 'The Wind Rises'},
-      {title: 'Castle in the Sky'}
-    ]
-    const resultadoEsperado =[
-      {title: 'Whisper of the Heart,'},
-      {title: 'The Wind Rises'},
-      {title: 'Castle in the Sky'}
-    ]
-    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabetoReversa');
-    expect(peliculasfiltradas). toEqual(resultadoEsperado)
-  });
-});
-
-describe('Tests de sortAlphabeticYear', () => {
-  it('Test para filtrar las peliculas de la más nueva a la más vieja', () => {
+  it('Test para validar las películas de la peor calificada a la mejor', () => {
     const peliculas = [
       {
-        "title": "When Marnie Was There",
-        "release_date": "2014",
+        "title": "Tales from Earthsea",
+        "rt_score": "41",
       },
       {
-        "title": "Princess Mononoke",
-        "release_date": "1997",
+        "title": "Howl's Moving Castle",
+        "rt_score": "87",
       },
       {
-        "title": "Castle in the Sky",
-        "release_date": "1986",
+        "title": "Only Yesterday",
+        "rt_score": "100",
       }
     ]
-    const resultadoEsperado =[
+    const resultadoEsperado = [
       {
-        "title": "When Marnie Was There",
-        "release_date": "2014",
+        "title": "Tales from Earthsea",
+        "rt_score": "41",
       },
       {
-        "title": "Princess Mononoke",
-        "release_date": "1997",
+        "title": "Howl's Moving Castle",
+        "rt_score": "87",
       },
       {
-        "title": "Castle in the Sky",
-        "release_date": "1986",
+        "title": "Only Yesterday",
+        "rt_score": "100",
       }
     ]
-    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'nuevas');
-    expect(peliculasfiltradas).toEqual(resultadoEsperado);
-  });
-  it('Test para filtrar las peliculas de la más vieja a la más nueva', () => {
-    const peliculas = [
-      {
-        "title": "Castle in the Sky",
-        "release_date": "1986",
-      },
-      {
-        "title": "Princess Mononoke",
-        "release_date": "1997",
-      },
-      {
-        "title": "When Marnie Was There",
-        "release_date": "2014",
-      }
-    ]
-    const resultadoEsperado =[
-      {
-        "title": "Castle in the Sky",
-        "release_date": "1986",
-      },
-      {
-        "title": "Princess Mononoke",
-        "release_date": "1997",
-      },
-      {
-        "title": "When Marnie Was There",
-        "release_date": "2014",
-      }
-    ];
-    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'viejas');
+    const peliculasfiltradas = ordenarPorNumeros (peliculas, 'peor');
     expect(peliculasfiltradas).toEqual(resultadoEsperado);
   });
 });
