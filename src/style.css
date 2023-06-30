@@ -32,7 +32,6 @@ header {
     background-size: cover;
     background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
 }
-
 .navegacion-principal{
     position: fixed;
     top: 0;
@@ -80,7 +79,6 @@ li {
     list-style: none;
     font-size: 16px;
 }
-
 img {
     border: solid #647390;
     width: 150px;
@@ -89,7 +87,6 @@ img {
     padding: 10px;
     float: right;
 }
-
 .flyer {
     width: 30%;
     height: 300x;
@@ -103,11 +100,3 @@ ol {
     margin-top: 5rem;
     width: 80;
 }
-.mostrarPersonaje{
-    background-color: #b4c8c0;
-
-}
-/* image-orientation: center;
-shape-image-threshold: 10rem 5rem;
-height: 200px;
-    width: 150px */ */
