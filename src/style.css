@@ -12,8 +12,6 @@ button,select {
     -moz-osx-font-smoothing: inherit;
     -webkit-appearance: none;
 }
-
-
 body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -105,3 +103,11 @@ ol {
     margin-top: 5rem;
     width: 80;
 }
+.mostrarPersonaje{
+    background-color: #b4c8c0;
+
+}
+/* image-orientation: center;
+shape-image-threshold: 10rem 5rem;
+height: 200px;
+    width: 150px */ */
