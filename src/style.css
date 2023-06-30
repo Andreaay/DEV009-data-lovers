@@ -88,12 +88,13 @@ img {
     float: right;
 }
 .flyer {
-    width: 30%;
-    height: 300x;
+    width: 24%;
+    height: 500px;
     padding: 20px;
-    margin: 50px;
-    float: center;
-    justify-content: space-between;
+    margin: 30px 20px;
+    float: left;
+    justify-content: center;
+    
 }
 
 ol {
