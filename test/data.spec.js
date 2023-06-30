@@ -2,6 +2,7 @@ import { filterDirector } from '../src/data.js';
 import { sortAlphabeticYear } from '../src/data.js';
 import { filterPoster } from '../src/data.js'; 
 import { ordenarPorNumeros } from '../src/data.js'; 
+import { mostrarPersonaje } from '../src/data.js';
 
 describe('Tests de sortAlphabeticYear', () => {
   it('Test para filtrar las peliculas de la A a la Z', () => {
@@ -2384,5 +2385,11 @@ describe('Test de filterPoster', () => {
     ];
     const posters = filterPoster(peliculas)
     expect(posters).toEqual(resultadoEsperado);
+  });
+});
+
+describe('Test para validad mostrarPersonaje', () => {
+  it('is a function', () => {
+    expect(typeof anotherExample).toBe('function');
   });
 });
