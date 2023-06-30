@@ -1,4 +1,6 @@
-import { filterDirector,sortAlphabeticYear } from '../src/data.js';
+import { filterDirector } from '../src/data.js';
+import { sortAlphabeticYear } from '../src/data.js';
+import { filterPoster } from '../src/data.js';
 
 describe('Tests de filter director', () => {
   it('test para validar todas las películas de Hayao Myazaki', () => {
@@ -2196,31 +2198,58 @@ describe('Tests de filter director', () => {
 describe('Tests de sortAlphabeticYear', () => {
   it('Test para filtrar las peliculas de la A a la Z', () => {
     const peliculas = [
-      {title: 'My Neighbors the Yamadas'},
-      {title: 'Whisper of the Heart'},
       {title: 'Castle in the Sky'},
+      {title: 'My Neighbors the Yamadas'},
+      {title: 'Whisper of the Heart'}
     ]
     const resultadoEsperado =[
       {title: 'Castle in the Sky'},
       {title: 'My Neighbors the Yamadas'},
-      {title: 'Whisper of the Heart'},
+      {title: 'Whisper of the Heart'}
     ]
     const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabeto');
     expect(peliculasfiltradas).toEqual(resultadoEsperado);
   });
   it('Test para filtrar las películas de la Z a la A', () => {
     const peliculas =[
-      {title: 'The Wind Rises'},
-      {title: 'Castle in the Sky'},
       {title: 'Whisper of the Heart,'},
+      {title: 'The Wind Rises'},
+      {title: 'Castle in the Sky'}
     ]
     const resultadoEsperado =[
       {title: 'Whisper of the Heart,'},
       {title: 'The Wind Rises'},
-      {title: 'Castle in the Sky'},
+      {title: 'Castle in the Sky'}
     ]
     const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabetoReversa');
     expect(peliculasfiltradas). toEqual(resultadoEsperado)
   });
 });
+
+describe('Test de filterPoster', () => {
+  it('Test para filtrar sólo el poster de cada película', () => {
+    const peliculas = [
+      {
+        "title": "Castle in the Sky",
+        "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
+      },
+      {
+        "title": "Kiki's Delivery Service",
+        "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg",
+      },
+      { 
+        "title": "My Neighbor Totoro",
+        "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+      }
+    ]
+    const resultadoEsperado=[
+      'https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg',
+      'https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg',
+      'https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg',
+    ];
+    const posters = filterPoster(peliculas)
+    expect(posters).toEqual(resultadoEsperado);
+  });
+});
+
 
