@@ -2226,6 +2226,73 @@ describe('Tests de sortAlphabeticYear', () => {
   });
 });
 
+describe('Tests de sortAlphabeticYear', () => {
+  it('Test para filtrar las peliculas de la más nueva a la más vieja', () => {
+    const peliculas = [
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      }
+    ]
+    const resultadoEsperado =[
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      }
+    ]
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'nuevas');
+    expect(peliculasfiltradas).toEqual(resultadoEsperado);
+  });
+  it('Test para filtrar las peliculas de la más vieja a la más nueva', () => {
+    const peliculas = [
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      }
+    ]
+    const resultadoEsperado =[
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
+      },
+      {
+        "title": "Princess Mononoke",
+        "release_date": "1997",
+      },
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
+      }
+    ];
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'viejas');
+    expect(peliculasfiltradas).toEqual(resultadoEsperado);
+  });
+});
+
 describe('Test de filterPoster', () => {
   it('Test para filtrar sólo el poster de cada película', () => {
     const peliculas = [
@@ -2251,5 +2318,3 @@ describe('Test de filterPoster', () => {
     expect(posters).toEqual(resultadoEsperado);
   });
 });
-
-
