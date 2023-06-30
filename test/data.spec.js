@@ -1,6 +1,6 @@
-import { filterDirector } from '../src/data.js';
+import { filterDirector,sortAlphabeticYear } from '../src/data.js';
 
-describe('tests de filter director', () => {
+describe('Tests de filter director', () => {
   it('test para validar todas las películas de Hayao Myazaki', () => {
     const nombreDeDirector = 'Hayao Miyazaki'
     const dataSetDePeliculas = [{
@@ -2192,3 +2192,35 @@ describe('tests de filter director', () => {
     expect(filterDirector( dataSetDePeliculas,nombreDeDirector)).toEqual(resultadoEsperado);
   });
 });
+
+describe('Tests de sortAlphabeticYear', () => {
+  it('Test para filtrar las peliculas de la A a la Z', () => {
+    const peliculas = [
+      {title: 'My Neighbors the Yamadas'},
+      {title: 'Whisper of the Heart'},
+      {title: 'Castle in the Sky'},
+    ]
+    const resultadoEsperado =[
+      {title: 'Castle in the Sky'},
+      {title: 'My Neighbors the Yamadas'},
+      {title: 'Whisper of the Heart'},
+    ]
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabeto');
+    expect(peliculasfiltradas).toEqual(resultadoEsperado);
+  });
+  it('Test para filtrar las películas de la Z a la A', () => {
+    const peliculas =[
+      {title: 'The Wind Rises'},
+      {title: 'Castle in the Sky'},
+      {title: 'Whisper of the Heart,'},
+    ]
+    const resultadoEsperado =[
+      {title: 'Whisper of the Heart,'},
+      {title: 'The Wind Rises'},
+      {title: 'Castle in the Sky'},
+    ]
+    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabetoReversa');
+    expect(peliculasfiltradas). toEqual(resultadoEsperado)
+  }
+});
+
