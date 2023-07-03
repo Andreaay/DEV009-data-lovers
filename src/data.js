@@ -42,17 +42,6 @@ export const filterPoster = (data) => {
   return posters.map(pelicula => pelicula.poster);
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
 
 
 
-
-
-
-  
-  //const tiempo =listaPeliculas.sort((direccion ) =>{
-
-  
-  //return tiempo (campoOrdenar )

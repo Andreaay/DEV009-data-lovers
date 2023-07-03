@@ -12,10 +12,10 @@ const flyersButton = document.getElementById("flyers-Button")
 
 
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
-    peliculasList.innerHTML = "";
+    peliculasList.innerHTML = "";//Limpiador
 
     for (let i = 0; i < parametro.length; i++) {
-        let pelicula = parametro[i];
+        let pelicula = parametro[i];//Limpiador
         let contenidoHTML = `
     <div class="pelicula">
     <section id= "section3" >
@@ -38,7 +38,7 @@ function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
 }
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
 
-function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
+function mostrarPersonaje(parametro) {
     peliculasList.innerHTML = "";
 
     for (let i = 0; i < parametro.length; i++) {
@@ -56,9 +56,10 @@ function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
         </section>
     </div>
     `;
-        let peliculaItem = document.createElement('li');
+        let peliculaItem = document.createElement('ul');
         peliculaItem.innerHTML = contenidoHTML;
         peliculasList.appendChild(peliculaItem);
+        
     }
 }
 

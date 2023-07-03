@@ -74,30 +74,44 @@ li {
     height: 500px;
     width: 500px;
     padding: 10px;
-    margin: 100px 20px;
+    margin: 40px 20px;
     text-align: left;
     list-style: none;
     font-size: 16px;
 }
 img {
-    border: solid #647390;
-    width: 150px;
-    height: 350x;
+    border: solid #dcb761;
+    width: 220px;
+    height: 300px;
     margin: 15px;
     padding: 10px;
     float: right;
 }
+
 .flyer {
     width: 24%;
     height: 500px;
-    padding: 20px;
-    margin: 30px 20px;
+    padding: 0px;
+    margin: 20px 10px;
     float: left;
     justify-content: center;
+    object-fit: contain;
+    background-color: #dcb761;
     
 }
 
 ol {
-    margin-top: 5rem;
-    width: 80;
+    margin-top: 7rem;
+    width: 80;  
+}
+ul{
+    background-color: #b4c8c0;
+    border: 12px solid #b17261;
+    color: #1f2124;
+    height: 320px;
+    width: 25%;
+    padding: 15px;
+    margin: 50px 20px;
+    float: left;
+    text-align: left;
 }
