@@ -9,13 +9,10 @@ const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
 const flyersButton = document.getElementById("flyers-Button")
 
-
-
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
-    peliculasList.innerHTML = "";//Limpiador
-
+    peliculasList.innerHTML = "";//Limpiador//Limpiador
     for (let i = 0; i < parametro.length; i++) {
-        let pelicula = parametro[i];//Limpiador
+        let pelicula = parametro[i];//Limpiador//Limpiador
         let contenidoHTML = `
     <div class="pelicula">
     <section id= "section3" >
@@ -37,10 +34,10 @@ function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
     }
 }
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
+function mostrarPersonaje(parametro) {
 
 function mostrarPersonaje(parametro) {
     peliculasList.innerHTML = "";
-
     for (let i = 0; i < parametro.length; i++) {
         let pelicula = parametro[i];
         let contenidoHTML = `
@@ -57,23 +54,19 @@ function mostrarPersonaje(parametro) {
     </div>
     `;
         let peliculaItem = document.createElement('ul');
+        let peliculaItem = document.createElement('ul');
         peliculaItem.innerHTML = contenidoHTML;
         peliculasList.appendChild(peliculaItem);
         
     }
 }
-
 // Event Listeners
-
 botonHome.addEventListener('click', function () {//change lee si hay un clcik en home
     mostrarPeliculas(todasLasPeliculas);
 })
-
 botonPersonajes.addEventListener('click', function () {//change lee si hay un clcik en home
     mostrarPersonaje(todasLasPeliculas);
 })
-
-
 selectorDirectores.addEventListener('change', function () {//change lee si hay un cambio en el select
     const directorEscogido = selectorDirectores.value//Se guarda el valor del select
     if (directorEscogido === "directores") {
@@ -83,8 +76,6 @@ selectorDirectores.addEventListener('change', function () {//change lee si hay u
         mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
     }
 })
-
-
 selectorTiempo.addEventListener('change', function () {
     console.log("click")
     const selectorEscogido = selectorTiempo.value
@@ -96,18 +87,14 @@ selectorTiempo.addEventListener('change', function () {
     /* if (tiempoEscogido == "viejas") {
          mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
      } else if (tiempoEscogido == "nuevas") {
-         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
+         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false
      } else if (tiempoEscogido == "alfabeto") {
          mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
- 
      } else if (tiempoEscogido == "alfabetoReversa"){
          mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
      }
- 
      }*/
-
 })
-
 selectorCalificacion.addEventListener('change', function () {
     const calificacionEscogido = selectorCalificacion.value
     if (calificacionEscogido == "mejor") {
@@ -116,7 +103,7 @@ selectorCalificacion.addEventListener('change', function () {
         mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score", true)))
     }
 })
-//función para botón de posters 
+//función para botón de posters
 flyersButton.addEventListener('click', function () {
     const posters = filterPoster(data);
     peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
@@ -127,9 +114,6 @@ flyersButton.addEventListener('click', function () {
         peliculasList.appendChild(img);
     }
 });
-
-
-
 // event listener que lea els elector de tiempo
 //constante donde guardar el valor
 // if selección viejo ordena por viejo

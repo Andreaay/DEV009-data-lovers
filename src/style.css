@@ -16,9 +16,8 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    background-color: #3c252b;
+    background-color: #3C252B;
 }
-
 header {
     text-align: center;
     letter-spacing: 18px;
@@ -41,36 +40,33 @@ header {
     gap: .5rem;
     transition: 0.7s;
     margin:4rem 0;
-    background-color: #b4c8c0;
+    background-color: #B4C8C0;
 }
-
 button,
 select{
-    background-color: #b4c8c0;
-    color: #1f2124;
+    background-color: #B4C8C0;
+    color: #1F2124;
     width: 13rem;
     text-align: center;
     padding: .7em 0;
     font-size: 1.0em;
     font-weight: 600;
     text-transform: uppercase;
-
 }
 button:hover,
 select:hover{
-    background-color: #aabbb4;
+    background-color: #AABBB4;
     border-bottom: 4px solid  rgb(183, 135, 48);
 }
 .section2 {
     height: 50px;
     width: 100px;
 }
-
 li {
     float: left;
-    border: 4px solid #dcb761;
-    background-color: #b17261;
-    color: #1f2124;
+    border: 4px solid #DCB761;
+    background-color: #B17261;
+    color: #1F2124;
     height: 500px;
     width: 500px;
     padding: 10px;
@@ -80,7 +76,7 @@ li {
     font-size: 16px;
 }
 img {
-    border: solid #dcb761;
+    border: solid #DCB761;
     width: 220px;
     height: 300px;
     margin: 15px;
@@ -96,18 +92,16 @@ img {
     float: left;
     justify-content: center;
     object-fit: contain;
-    background-color: #dcb761;
-    
+    background-color: #DCB761;
 }
-
 ol {
     margin-top: 7rem;
-    width: 80;  
+    width: 80;
 }
 ul{
-    background-color: #b4c8c0;
-    border: 12px solid #b17261;
-    color: #1f2124;
+    background-color: #B4C8C0;
+    border: 12px solid #B17261;
+    color: #1F2124;
     height: 320px;
     width: 25%;
     padding: 15px;
