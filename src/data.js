@@ -32,7 +32,6 @@ export const ordenarPorNumeros = (listaPeliculas,campoOrdenar,direccion) => {//l
   });
 };
 export const filterPoster = (data) => {
-  console.log(data)
   const posters = data.films.filter(pelicula => pelicula.poster !== null && pelicula.poster !== undefined);
   return posters.map(pelicula => pelicula.poster);
 };

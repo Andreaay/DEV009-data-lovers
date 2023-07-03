@@ -1,5 +1,6 @@
 import data from './data/ghibli/ghibli.js';
 import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster } from "./data.js";
+
 const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
 const botonHome = document.getElementById("home-button")
 const botonPersonajes = document.getElementById("personajes-button")
@@ -12,7 +13,7 @@ const flyersButton = document.getElementById("flyers-Button")
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
   peliculasList.innerHTML = "";//Limpiador
   for (let i = 0; i < parametro.length; i++) {
-    const pelicula = parametro[i];//Limpiador
+    const pelicula = parametro[i];
     const contenidoHTML = `
     <div class="pelicula">
     <section id= "section3" >
@@ -30,7 +31,7 @@ function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
     `;
     const peliculaItem = document.createElement('li');
     peliculaItem.innerHTML = contenidoHTML;
-    peliculasList.appendChild(peliculaItem);
+    peliculasList.appendChild(peliculaItem);//Esta parte mueve el li dentro del ol creado en HTML
   }
 }
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
@@ -51,7 +52,7 @@ function mostrarPersonaje(parametro) {
         </section>
     </div>
     `;
-    const peliculaItem = document.createElement('ul');
+    const peliculaItem = document.createElement('ul'); //se utiliza ul para poder identificarlo en CSS
     peliculaItem.innerHTML = contenidoHTML;
     peliculasList.appendChild(peliculaItem);
   }
