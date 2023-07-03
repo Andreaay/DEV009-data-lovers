@@ -9,14 +9,11 @@ const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
 const flyersButton = document.getElementById("flyers-Button")
 
-
-
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
-  peliculasList.innerHTML = "";
-
-  for (let i = 0; i < parametro.length; i++) {
-    const pelicula = parametro[i];
-    const contenidoHTML = `
+    peliculasList.innerHTML = "";//Limpiador
+    for (let i = 0; i < parametro.length; i++) {
+        let pelicula = parametro[i];//Limpiador
+        let contenidoHTML = `
     <div class="pelicula">
     <section id= "section3" >
     <img src="${pelicula.poster}" alt="${pelicula.title} poster" />
@@ -31,19 +28,17 @@ function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
         </section>
     </div>
     `;
-    const peliculaItem = document.createElement('li');
-    peliculaItem.innerHTML = contenidoHTML;
-    peliculasList.appendChild(peliculaItem);
-  }
+        let peliculaItem = document.createElement('li');
+        peliculaItem.innerHTML = contenidoHTML;
+        peliculasList.appendChild(peliculaItem);
+    }
 }
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
-
-function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
-  peliculasList.innerHTML = "";
-
-  for (let i = 0; i < parametro.length; i++) {
-    const pelicula = parametro[i];
-    const contenidoHTML = `
+function mostrarPersonaje(parametro) {
+    peliculasList.innerHTML = "";
+    for (let i = 0; i < parametro.length; i++) {
+        let pelicula = parametro[i];
+        let contenidoHTML = `
     <div class="mostrarPersonaje">
     <section id= "section3" >
     <img src="${pelicula.people[0].img}" alt="${pelicula.people[0].name} poster" />
@@ -56,79 +51,65 @@ function mostrarPersonaje(parametro) {//parametro hace que sea reutilizable
         </section>
     </div>
     `;
-    const peliculaItem = document.createElement('li');
-    peliculaItem.innerHTML = contenidoHTML;
-    peliculasList.appendChild(peliculaItem);
-  }
+        let peliculaItem = document.createElement('ul');
+        peliculaItem.innerHTML = contenidoHTML;
+        peliculasList.appendChild(peliculaItem);
+    }
 }
-
 // Event Listeners
-
 botonHome.addEventListener('click', function () {//change lee si hay un clcik en home
-  mostrarPeliculas(todasLasPeliculas);
+    mostrarPeliculas(todasLasPeliculas);
 })
-
 botonPersonajes.addEventListener('click', function () {//change lee si hay un clcik en home
-  mostrarPersonaje(todasLasPeliculas);
+    mostrarPersonaje(todasLasPeliculas);
 })
-
-
 selectorDirectores.addEventListener('change', function () {//change lee si hay un cambio en el select
-  const directorEscogido = selectorDirectores.value//Se guarda el valor del select
-  if (directorEscogido === "directores") {
-    mostrarPeliculas(todasLasPeliculas);
-  }
-  else {
-    mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
-  }
+    const directorEscogido = selectorDirectores.value//Se guarda el valor del select
+    if (directorEscogido === "directores") {
+        mostrarPeliculas(todasLasPeliculas);
+    }
+    else {
+        mostrarPeliculas(filterDirector(todasLasPeliculas, directorEscogido));
+    }
 })
-
-
 selectorTiempo.addEventListener('change', function () {
-  //console.log("click")
-  const selectorEscogido = selectorTiempo.value
-  if (selectorEscogido === "all") {
-    mostrarPeliculas(todasLasPeliculas);
-  } else {
-    mostrarPeliculas(sortAlphabeticYear(todasLasPeliculas, selectorEscogido))
-  }
-  /* if (tiempoEscogido == "viejas") {
+    console.log("click")
+    const selectorEscogido = selectorTiempo.value
+    if (selectorEscogido === "all") {
+        mostrarPeliculas(todasLasPeliculas);
+    } else {
+        mostrarPeliculas(sortAlphabeticYear(todasLasPeliculas, selectorEscogido))
+    }
+    /* if (tiempoEscogido == "viejas") {
          mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
      } else if (tiempoEscogido == "nuevas") {
-         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false 
+         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false
      } else if (tiempoEscogido == "alfabeto") {
          mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
- 
      } else if (tiempoEscogido == "alfabetoReversa"){
          mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
      }
- 
      }*/
-
 })
-
 selectorCalificacion.addEventListener('change', function () {
-  const calificacionEscogido = selectorCalificacion.value
-  if (calificacionEscogido === "mejor") {
-    mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score", false)))//Sirve para indicarle asl sort si es ascendente en true
-  } else {
-    mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score", true)))
-  }
+    const calificacionEscogido = selectorCalificacion.value
+    if (calificacionEscogido == "mejor") {
+        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score", false)))//Sirve para indicarle asl sort si es ascendente en true
+    } else {
+        mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "rt_score", true)))
+    }
 })
-//función para botón de posters 
+//función para botón de posters
 flyersButton.addEventListener('click', function () {
-  const posters = filterPoster(data);
-  peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
-  for (let i = 0; i < posters.length; i++) {
-    const img = document.createElement('img');
-    img.src = posters[i];
-    img.classList.add('flyer')
-    peliculasList.appendChild(img);
-  }
+    const posters = filterPoster(data);
+    peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
+    for (let i = 0; i < posters.length; i++) {
+        const img = document.createElement('img');
+        img.src = posters[i];
+        img.classList.add('flyer')
+        peliculasList.appendChild(img);
+    }
 });
-
-
-
 // event listener que lea els elector de tiempo
 //constante donde guardar el valor
 // if selección viejo ordena por viejo
