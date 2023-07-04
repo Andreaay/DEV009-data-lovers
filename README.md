@@ -179,15 +179,3 @@ Para el desarrollo de este proyecto se utilizó:
 * Pruebas unitarias: Las pruebas unitarias son un enfoque de prueba en el que se verifican las partes más pequeñas y aisladas del código, como funciones o componentes, para asegurarse de que funcionan correctamente. Las pruebas unitarias se escriben utilizando frameworks de pruebas (Jest) y ayudan a detectar y corregir errores, garantizando que el código cumpla con los requisitos y funcione de acuerdo a lo esperado.
 
 * GitHub: Es una plataforma de desarrollo colaborativo basada en la nube que permite alojar, gestionar y compartir proyectos de software utilizando el sistema de control de versiones Git. Fue utilizado para almacenar y gestionar el repositorio del proyecto del analizador de texto. Con GitHub, se pudo mantener un registro de todas las versiones del código, realizar seguimiento de cambios, colaborar con otros desarrolladores y facilitar la distribución y el acceso al proyecto. Además, GitHub proporciona herramientas para la gestión de problemas (issues), revisión de código (pull requests) y despliegue del proyecto en un servidor web.
-
-Features/características extra sugeridas:
-
-* En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json` de
-  de cada set datos.
-* Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
-  ello te recomendamos explorar librerías de gráficas como
-  [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
-* 100% Coverage
