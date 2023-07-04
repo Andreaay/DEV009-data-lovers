@@ -46,7 +46,7 @@ La plataforma utiliza tecnologías web modernas, como HTML, CSS y JavaScript, pa
 
 ## 3. Características del proyecto
 
-Es una herramienta interactiva y útil para explorar y obtener información detallada sobre las películas del Studio Ghibli. Los usuarios pueden filtrar, ordenar y explorar las películas según sus preferencias y también obtener información sobre los personajes principales.
+Es una herramienta interactiva y útil para explorar y obtener información detallada sobre las películas de Studio Ghibli. Los usuarios pueden filtrar, ordenar y explorar las películas según sus preferencias y también obtener información sobre los personajes principales.
 
 * Acceso a grandes conjuntos de datos: Data Lovers permite a los usuarios acceder a una amplia variedad de conjuntos de datos.
 
