@@ -10,13 +10,13 @@ button,select {
     line-height: normal;
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
-    -webkit-appearance: none;
+    
 }
 body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    background-color: #3C252B;
+    background-color: #47232d;
 }
 header {
     text-align: center;
@@ -36,7 +36,8 @@ header {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center; 
     gap: .5rem;
     transition: 0.7s;
     margin:4rem 0;
@@ -67,8 +68,8 @@ li {
     border: 4px solid #DCB761;
     background-color: #B17261;
     color: #1F2124;
-    height: 500px;
-    width: 500px;
+    height: 530px;
+    width: 400px;
     padding: 10px;
     margin: 40px 20px;
     text-align: left;
@@ -76,28 +77,29 @@ li {
     font-size: 16px;
 }
 img {
-    border: solid #DCB761;
     width: 220px;
     height: 300px;
-    margin: 15px;
     padding: 10px;
-    float: right;
+    float: right;   
 }
 
-.flyer {
-    width: 24%;
-    height: 500px;
-    padding: 0px;
-    margin: 20px 10px;
+.flyer { 
     float: left;
-    justify-content: center;
-    object-fit: contain;
-    background-color: #DCB761;
+    object-fit: cover;   /* sirve para que las imagenes no se aplasten*/
+    
+    width: 330px;
+    height: 520px;
 }
+
 ol {
-    margin-top: 7rem;
-    width: 80;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
 }
+
 ul{
     background-color: #B4C8C0;
     border: 12px solid #B17261;
@@ -108,4 +110,17 @@ ul{
     margin: 50px 20px;
     float: left;
     text-align: left;
+}
+
+#peliculas-list{
+    display: flex;
+    flex-wrap: wrap; 
+}
+li{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-shrink;
+}
+.texto{
+    font-size: smaller;
 }
