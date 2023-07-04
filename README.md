@@ -31,15 +31,25 @@ La plataforma utiliza tecnologías web modernas, como HTML, CSS y JavaScript, pa
 
 ## 2. Objetivos del proyecto
 
-* Facilitar el acceso a grandes conjuntos de datos: El objetivo principal de Data Lovers es proporcionar a los usuarios una plataforma fácil de usar que les permita acceder y explorar grandes conjuntos de datos de manera intuitiva y eficiente.
+* Proporcionar una interfaz interactiva y fácil de usar que permita a los usuarios explorar y obtener información detallada sobre las películas de Studio Ghibli.
 
-* Mejorar la comprensión de los datos: Data Lovers tiene como objetivo ayudar a los usuarios a comprender y analizar los datos de manera más efectiva. Esto se logra mediante la aplicación de técnicas de visualización de datos y la presentación de la información de manera clara y concisa.
+* Mostrar una lista completa de las películas de Studio Ghibli, incluyendo detalles como el título, director, productor, fecha de lanzamiento y calificación (RT SCORE).
 
-* Proporcionar herramientas interactivas de filtrado y ordenamiento: El proyecto busca ofrecer herramientas que permitan a los usuarios filtrar y ordenar los datos de acuerdo con sus necesidades y preferencias, lo que facilita el análisis y la extracción de información relevante.
+* Permitir a los usuarios filtrar las películas por director, lo que les permitirá explorar la filmografía de directores específicos y descubrir nuevas películas de sus directores favoritos.
 
-* Fomentar la toma de decisiones informadas: Data Lovers busca empoderar a los usuarios al proporcionarles datos confiables y una interfaz intuitiva que les permita tomar decisiones basadas en información precisa y actualizada.
+* Ofrecer la capacidad de ordenar las películas alfabéticamente, por fecha de lanzamiento y por calificación, lo que facilita la búsqueda y clasificación de las películas según las preferencias de los usuarios.
 
-* Promover la colaboración y el intercambio de conocimientos: El proyecto puede tener como objetivo fomentar la colaboración y el intercambio de conocimientos entre los usuarios al permitirles compartir visualizaciones y análisis de datos con otros usuarios.
+* Proporcionar información detallada sobre los personajes principales de cada película, incluyendo su nombre, imagen, edad, género y especie.
+
+* Incluir una galería de pósters seleccionados de las películas de Studio Ghibli, permitiendo a los usuarios disfrutar del arte visual de cada película.
+
+* Brindar una experiencia fluida y receptiva, asegurándose de que la navegación y la visualización de la información sean rápidas y eficientes.
+
+* Garantizar la usabilidad y accesibilidad del proyecto, asegurándose de que sea fácil de entender y utilizar para una amplia gama de usuarios.
+
+* Mejorar y actualizar continuamente el proyecto, agregando nuevas películas de Studio Ghibli a medida que estén disponibles y proporcionando nuevas características y funcionalidades para enriquecer la experiencia del usuario.
+
+* Recopilar y analizar comentarios y retroalimentación de los usuarios para mejorar y optimizar el proyecto en futuras versiones.
 
 ## 3. Características del proyecto
 
