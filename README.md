@@ -25,11 +25,12 @@ grandes cantidades de datos se conviertan en **información** fácil de leer par
 los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
 hacerlo es creando _interfaces_ y _visualizaciones_.
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por las
-usuarias, al lado derecho.
+El proyecto Data Lovers es una iniciativa que busca facilitar el acceso y la comprensión de grandes conjuntos de datos a través de una interfaz interactiva. Proporciona a los usuarios herramientas para filtrar, ordenar y visualizar la información de manera clara y concisa.
 
-![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
+Data Lovers se inspira en el creciente campo del análisis de datos y la visualización de información. Con el aumento en la cantidad de datos disponibles en diversas áreas, desde el ámbito empresarial hasta el científico, se ha vuelto cada vez más importante encontrar formas efectivas de extraer conocimiento útil de esos datos. Data Lovers busca precisamente eso, brindar una plataforma donde los usuarios puedan explorar y comprender los datos de manera intuitiva y significativa.
+
+La plataforma utiliza tecnologías web modernas, como HTML, CSS y JavaScript, para crear una interfaz de usuario atractiva y fácil de usar. Además, se aplican técnicas de visualización de datos para representar la información de manera visualmente atractiva y comprensible.
+
 
 ## 2. Objetivos del proyecto
 
@@ -384,128 +385,4 @@ Features/características extra sugeridas:
 
 ## 7. Bibliografía
 
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#6-hacker-edition) más arriba.
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias:
-
-```text
-.
-├── EXTRA.md
-├── README.md
-├── package.json
-├── src
-|  ├── data (según con qué data trabajes)
-|  |  ├── lol
-|  |  |  ├── lol.js
-|  |  |  ├── lol.json
-|  |  |  └── README.md
-|  |  ├── pokemon
-|  |  |  ├── pokemon.js
-|  |  |  ├── pokemon.json
-|  |  |  └── README.md
-|  |  └── rickandmorty
-|  |  |  ├── rickandmorty.js
-|  |  |  ├── rickandmorty.json
-|  |  |  └── README.md
-|  |  └── athletes
-|  |  |  ├── athletes.js
-|  |  |  ├── athletes.json
-|  |  |  └── README.md
-|  |  └── ghibli
-|  |  |  ├── ghibli.js
-|  |  |  ├── ghibli.json
-|  |  |  └── README.md
-|  ├── data.js
-|  ├── index.html
-|  ├── main.js
-|  └── style.css
-└── test
-   └── data.spec.js
-
-directory: 7 file: 20
-```
-
-### `src/index.html`
-
-Como en el proyecto anterior, existe un archivo `index.html`. Como ya sabes,
-acá va la página que se mostrará al usuario. También nos sirve para indicar
-qué scripts se usarán y unir todo lo que hemos hecho.
-
-### `src/main.js`
-
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
-interacción con el DOM. Operaciones como creación de nodos, registro de
-manejadores de eventos (_event listeners_ o _event handlers_), ....
-
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
-
-En este archivo encontrarás una serie de _imports_ _comentados_. Para _cargar_
-las diferentes fuentes de datos tendrás que _descomentar_ la línea
-correspondiente.
-
-Por ejemplo, si "descomentamos" la siguiente línea:
-
-```js
-// import data from './data/lol/lol.js';
-```
-
-La línea quedaría así:
-
-```js
-import data from './data/lol/lol.js';
-```
-
-Y ahora tendríamos la variable `data` disponible en el script `src/main.js`.
-
-### `src/data.js`
-
-El corazón de este proyecto es la manipulación de datos a través de arreglos
-y objetos.
-
-Te recomendamos que este archivo contenga toda la funcionalidad que corresponda
-a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
-
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
-
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
-
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
-
-Estos nombres de funciones y de parámetros son solamente referenciales, lo que
-decidas depende de tu propia implementación.
-
-Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
-
-### `src/data`
-
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
-carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
-extensión `.js` y otro `.json`. Ambos archivos contienen la misma data; la
-diferencia es que el `.js` lo usaremos a través de una etiqueta `<script>`,
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-(ver sección de [_Parte Opcional_](#6-hacker-edition)).
-
-### `test/data.spec.js`
-
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
+* Smith, J. (2022). "The Power of Data Visualization: How Visualizing Data Can Enhance Understanding". Recuperado el 4 de julio de 2023
