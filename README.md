@@ -166,9 +166,19 @@ en la sección de [Consideraciones técnicas](#srcdatajs).
 
 ## 6. Tecnologías utilizadas
 
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
+Para el desarrollo de este proyecto se utilizó:
+
+* Visual Studio Code: Se pudo trabajar de manera eficiente en la creación y edición del código. Es un potente editor de código fuente que proporciona una amplia gama de herramientas y funcionalidades para desarrolladores. Fue utilizado como el entorno de desarrollo principal para escribir y editar el código HTML, CSS y JavaScript del analizador de texto.
+
+* HTML (HyperText Markup Language): HTML es el lenguaje estándar utilizado para crear la estructura y el contenido de las páginas web. Permite definir elementos como encabezados, párrafos, imágenes, enlaces y otros elementos necesarios para mostrar información en un navegador web.
+
+* CSS (Cascading Style Sheets): CSS es un lenguaje de estilo utilizado para definir el diseño, la presentación y la apariencia visual de las páginas web. Permite establecer propiedades como colores, fuentes, márgenes, alineaciones y efectos visuales para mejorar el aspecto estético de la aplicación.
+
+* JavaScript: JavaScript es un lenguaje de programación de alto nivel y orientado a objetos que se utiliza principalmente para agregar interactividad a las páginas web. Con JavaScript, puedes manipular y modificar el contenido de la página, responder a eventos del usuario, realizar validaciones de formularios, crear efectos visuales y gestionar la lógica de la aplicación.
+
+* Pruebas unitarias: Las pruebas unitarias son un enfoque de prueba en el que se verifican las partes más pequeñas y aisladas del código, como funciones o componentes, para asegurarse de que funcionan correctamente. Las pruebas unitarias se escriben utilizando frameworks de pruebas (Jest) y ayudan a detectar y corregir errores, garantizando que el código cumpla con los requisitos y funcione de acuerdo a lo esperado.
+
+* GitHub: Es una plataforma de desarrollo colaborativo basada en la nube que permite alojar, gestionar y compartir proyectos de software utilizando el sistema de control de versiones Git. Fue utilizado para almacenar y gestionar el repositorio del proyecto del analizador de texto. Con GitHub, se pudo mantener un registro de todas las versiones del código, realizar seguimiento de cambios, colaborar con otros desarrolladores y facilitar la distribución y el acceso al proyecto. Además, GitHub proporciona herramientas para la gestión de problemas (issues), revisión de código (pull requests) y despliegue del proyecto en un servidor web.
 
 Features/características extra sugeridas:
 
