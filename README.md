@@ -74,12 +74,6 @@ Es una herramienta interactiva y útil para explorar y obtener información deta
 
 ## 4. Procedimiento
 
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
 ### Historias de usuario
 
 Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
