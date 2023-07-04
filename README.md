@@ -76,6 +76,16 @@ Es una herramienta interactiva y útil para explorar y obtener información deta
 
 ## 4. Procedimiento
 
+### Organización
+
+En cuanto a la organización del proyecto, utilizamos una herramienta de gestión de tareas llamada Trello. 
+
+Trello facilitó la colaboración en el proyecto, ya que pude compartir los tableros con otros miembros del equipo y asignar tareas específicas a cada persona. Esto nos ayudó a mantenernos sincronizadas y trabajar de manera coordinada. Esta herramienta nos permitió llevar un checklist detallado de las tareas necesarias para completar el proyecto y establecer metas y objetivos para cada día y semana.
+
+En Trello, creamos tableros que representaban diferentes aspectos del proyecto, como el desarrollo del código, el diseño de la interfaz y las pruebas unitarias. Dentro de cada tablero, creé listas para categorizar las tareas, como "Checklist general", "Historias de usuario", "Prototipos de alta y baja fidelidad" y "Planning".
+
+A medida que avanzabamos en el proyecto, ibamos moviendo la información de cada lista para reflejar su estado actual. Esto nos permitió visualizar rápidamente el progreso y asegurarnos de que todas las tareas estuvieran siendo abordadas de manera eficiente.
+
 ### Historias de usuario
 
 Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
