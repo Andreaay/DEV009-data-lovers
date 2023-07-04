@@ -2,18 +2,18 @@
 
 ## Índice
 
-* [1. DATA LOVERS](#1-DATA-LOVERS)
-* [2. OBJETIVOS DEL PROYECTO](#2-OBJETIVOS-DEL-PROYECTO)
-* [3. CARACTERÍSTICAS DEL PROYECTO](#3-CARACTERÍSTICAS-DEL-PROYECTO)
-* [4. PROCEDIMIENTO](#4-PROCEDIMIENTO)
-* [5. FUNIONALIDADES](#5-FUNCIONALIDADES)
-* [6. TECNOLOGÍAS UTILIZADAS](#6-TECNOLOGÍAS-UTLIZADAS)
-* [7. BIBLIOGRAFÍA](#7-BIBLIOGRAFÍA)
+* [1. Descripción de Data Lovers](#1-Descripción-de-Data-Lovers)
+* [2. Objetivos del proyecto](#2-Objetivos-del-proyecto)
+* [3. Características del proyecto](#3-Características-del-proyecto)
+* [4. Procedimiento](#4-Procedimiento)
+* [5. Funcionalidades](#5-Funcionalidades)
+* [6. Tecnologías utilizadas](#6-Tecnologías-utilizadas)
+* [7. Bibliografía](#7-Bibliografía)
 
 
 ***
 
-## 1. DATA LOVERS
+## 1. Descripción de Data Lovers
 
 Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
@@ -31,7 +31,7 @@ usuarias, al lado derecho.
 
 ![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
 
-## 2. OBJETIVOS DE PROYECTO
+## 2. Objetivos del proyecto
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
@@ -84,7 +84,7 @@ El objetivo principal de este proyecto es que aprendas a diseñar y construir un
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
 usuario necesita.
 
-## 3. CARACTERÍSTICAS DEL RPOYECTO
+## 3. Características del proyecto
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
@@ -279,14 +279,14 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Pruebas con Usuarios 1 — ¿Qué, cuándo y para qué testeamos?](https://eugeniacasabona.medium.com/pruebas-con-usuarios-1-qu%C3%A9-cu%C3%A1ndo-y-para-qu%C3%A9-testeamos-7c3a89b4b5e7)
 </p></details>
 
-## 4. PROCEDIMIENTO
+## 4. Procedimiento
 
 * Este proyecto se debe resolver en duplas.
 * El rango de tiempo estimado para completar el proyecto es de 3 a 4 Sprints.
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
 
-## 5. FUNCIONALIDADES
+## 5. Funcionalidades
 
 Los criterios para considerar que has completado este proyecto son:
 
@@ -364,7 +364,7 @@ Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
 (_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
 en la sección de [Consideraciones técnicas](#srcdatajs).
 
-## 6. TECNOLOGÍAS UTILIZADAS
+## 6. Tecnologías utilizadas
 
 Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
 con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
@@ -382,7 +382,7 @@ Features/características extra sugeridas:
   o [Google Charts](https://developers.google.com/chart/).
 * 100% Coverage
 
-## 7. BIBLIOGRAFÍA
+## 7. Bibliografía
 
 La lógica del proyecto debe estar implementada completamente en JavaScript
 (ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
