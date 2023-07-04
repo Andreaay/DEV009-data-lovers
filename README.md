@@ -14,7 +14,7 @@
 
 ## 1. Descripción de Data Lovers
 
-Data Lovers es un proyecto interactivo que te permite explorar y obtener información detallada sobre las películas del Studio Ghibli. Con una interfaz intuitiva y fácil de usar, este proyecto te sumerge en el fascinante mundo de las películas de animación japonesa.
+Data Lovers es un proyecto interactivo que te permite explorar y obtener información detallada sobre las películas de Studio Ghibli. Con una interfaz intuitiva y fácil de usar, este proyecto te sumerge en el fascinante mundo de las películas de animación japonesa.
 
 Con Data Lovers, puedes navegar a través de una amplia selección de películas del Studio Ghibli y descubrir detalles clave como el título, el director, el productor, la fecha de lanzamiento y la calificación (RT SCORE). Cada película viene acompañada de una descripción que te sumerge en su historia y te brinda una visión general de su trama.
 
