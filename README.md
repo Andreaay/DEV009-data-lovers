@@ -46,11 +46,23 @@ La plataforma utiliza tecnologías web modernas, como HTML, CSS y JavaScript, pa
 
 ## 3. Características del proyecto
 
+Es una herramienta interactiva y útil para explorar y obtener información detallada sobre las películas del Studio Ghibli. Los usuarios pueden filtrar, ordenar y explorar las películas según sus preferencias y también obtener información sobre los personajes principales.
+
 * Acceso a grandes conjuntos de datos: Data Lovers permite a los usuarios acceder a una amplia variedad de conjuntos de datos.
 
 * Visualización de datos interactiva: La plataforma ofrece capacidades de visualización interactiva que permiten a los usuarios explorar y comprender los datos de manera más efectiva.
 
 * Personalización y personalización de vistas: Los usuarios pueden personalizar las vistas de datos de acuerdo con sus necesidades y preferencias, como seleccionar columnas específicas.
+
+* Visualización de películas: El proyecto permite mostrar información detallada de películas del Studio Ghibli, incluyendo su título, director, productor, fecha de lanzamiento, calificación (RT SCORE) y descripción. También se muestra el póster de cada película.
+
+* Filtrado por director: Los usuarios pueden seleccionar un director específico del Studio Ghibli y ver las películas dirigidas por ese director. Al seleccionar un director en el menú desplegable, se filtran las películas y se muestran solo aquellas dirigidas por el director seleccionado.
+
+* Ordenamiento por diferentes criterios: El proyecto permite ordenar las películas de diferentes formas. Los usuarios pueden seleccionar opciones de ordenamiento como orden alfabético ascendente o descendente por título, orden cronológico de lanzamiento (más recientes o más antiguas) y orden por calificación (mejores o peores películas según el RT SCORE).
+
+* Visualización de personajes principales: Además de mostrar información de las películas, el proyecto también permite mostrar información de los personajes principales de cada película. Al hacer clic en el botón "Main Characters", se muestran los personajes principales de las películas con su nombre, imagen, edad, género y especie.
+
+* Visualización de pósters: El proyecto incluye un botón "Posters" que permite mostrar los pósters de las películas. Al hacer clic en este botón, se filtran las películas y se muestran solo aquellos pósters que están disponibles.
 
 
 ## 4. Procedimiento
