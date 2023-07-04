@@ -18,11 +18,11 @@ Data Lovers es un proyecto interactivo que te permite explorar y obtener informa
 
 Con Data Lovers, puedes navegar a través de una amplia selección de películas del Studio Ghibli y descubrir detalles clave como el título, el director, el productor, la fecha de lanzamiento y la calificación (RT SCORE). Cada película viene acompañada de una descripción que te sumerge en su historia y te brinda una visión general de su trama.
 
-Una de las características destacadas de Data Lovers es la capacidad de filtrar las películas según el director. Puedes seleccionar un director específico del Studio Ghibli y ver instantáneamente las películas que han sido dirigidas por esa persona en particular. Esto te permite explorar la filmografía de tus directores favoritos o descubrir nuevas películas de directores que te interesen.
+Una de las características destacadas de Data Lovers es la capacidad de filtrar las películas según el director. Puedes seleccionar un director específico de Studio Ghibli y ver instantáneamente las películas que han sido dirigidas por esa persona en particular. Esto te permite explorar la filmografía de tus directores favoritos o descubrir nuevas películas de directores que te interesen.
 
 Además, Data Lovers te brinda la opción de ordenar las películas según diferentes criterios. Puedes organizarlas alfabéticamente en orden ascendente o descendente, lo que facilita la búsqueda de películas específicas. También puedes ordenarlas por su fecha de lanzamiento, ya sea de forma ascendente (más recientes primero) o descendente (más antiguas primero). Si estás interesado en las calificaciones, puedes ordenar las películas por su puntuación, lo que te permite descubrir las mejores o peores películas según el RT SCORE.
 
-No solo te limitas a explorar las películas, sino que también puedes sumergirte en el mundo de los personajes principales. Data Lovers te permite ver información detallada sobre los personajes principales de cada película, incluyendo su nombre, imagen, edad, género y especie. Esta característica te brinda un vistazo más cercano a los personajes que dan vida a las historias del Studio Ghibli.
+No solo te limitas a explorar las películas, sino que también puedes sumergirte en el mundo de los personajes principales. Data Lovers te permite ver información detallada sobre los personajes principales de cada película, incluyendo su nombre, imagen, edad, género y especie. Esta característica te brinda un vistazo más cercano a los personajes que dan vida a las historias de Studio Ghibli.
 
 Por último, Data Lovers también te ofrece la posibilidad de disfrutar de los pósters de las películas. Mediante un botón dedicado, puedes explorar una galería de pósters seleccionados y admirar el arte visual de cada película.
 
