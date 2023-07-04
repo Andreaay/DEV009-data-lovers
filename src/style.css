@@ -23,6 +23,7 @@ header {
     letter-spacing: 18px;
     font-size: 2.5em;
     position: fixed;
+    justify-content:center;
     height: 2.1em;
     padding: 10px;
     width: 100vw;
@@ -110,6 +111,7 @@ ul{
     margin: 50px 20px;
     float: left;
     text-align: left;
+    
 }
 
 #peliculas-list{

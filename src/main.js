@@ -1,4 +1,13 @@
-
+import data from './data/ghibli/ghibli.js';
+import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster } from "./data.js";
+const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
+const botonHome = document.getElementById("home-button")
+const botonPersonajes = document.getElementById("personajes-button")
+const peliculasList = document.querySelector("#peliculas-list");//Home
+const selectorDirectores = document.getElementById("directores")
+const selectorTiempo = document.getElementById("tiempo")
+const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
+const flyersButton = document.getElementById("flyers-Button")
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
   peliculasList.innerHTML = "";//Limpiador
   for (let i = 0; i < parametro.length; i++) {
@@ -70,16 +79,6 @@ selectorTiempo.addEventListener('change', function () {
   } else {
     mostrarPeliculas(sortAlphabeticYear(todasLasPeliculas, selectorEscogido))
   }
-  /* if (tiempoEscogido == "viejas") {
-         mostrarPeliculas((ordenarPorNumeros(todasLasPeliculas, "release_date",true)))//Sirve para indicarle asl sort si es ascendente en true
-     } else if (tiempoEscogido == "nuevas") {
-         mostrarPeliculas(( ordenarPorNumeros(todasLasPeliculas,"release_date",false)))//Desendente en false false slase false false false false
-     } else if (tiempoEscogido == "alfabeto") {
-         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",true)))
-     } else if (tiempoEscogido == "alfabetoReversa"){
-         mostrarPeliculas(( ordenarPorString(todasLasPeliculas,"title",false)))
-     }
-     }*/
 })
 selectorCalificacion.addEventListener('change', function () {
   const calificacionEscogido = selectorCalificacion.value
@@ -100,7 +99,3 @@ flyersButton.addEventListener('click', function () {
     peliculasList.appendChild(img);
   }
 });
-// event listener que lea els elector de tiempo
-//constante donde guardar el valor
-// if selección viejo ordena por viejo
-//if selección nuevo ordena por nuevo
