@@ -31,6 +31,8 @@ La plataforma utiliza tecnologías web modernas, como HTML, CSS y JavaScript, pa
 
 ## 2. Objetivos del proyecto
 
+* Aprender a manipular una base de datos prehecha, que nos permite poder adaptarla a 5 historias de usuario.
+
 * Proporcionar una interfaz interactiva y fácil de usar que permita a los usuarios explorar y obtener información detallada sobre las películas de Studio Ghibli.
 
 * Mostrar una lista completa de las películas de Studio Ghibli, incluyendo detalles como el título, director, productor, fecha de lanzamiento y calificación (RT SCORE).
