@@ -74,15 +74,6 @@ Es una herramienta interactiva y útil para explorar y obtener información deta
 
 ## 4. Procedimiento
 
-* Este proyecto se debe resolver en duplas.
-* El rango de tiempo estimado para completar el proyecto es de 3 a 4 Sprints.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-
-## 5. Funcionalidades
-
-Los criterios para considerar que has completado este proyecto son:
-
 ### Definición del producto
 
 Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
@@ -156,6 +147,12 @@ Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
 (_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
 (_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
 en la sección de [Consideraciones técnicas](#srcdatajs).
+
+## 5. Funcionalidades
+
+
+
+
 
 ## 6. Tecnologías utilizadas
 
