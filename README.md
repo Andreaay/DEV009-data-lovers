@@ -8,26 +8,23 @@
 * [4. Procedimiento](#4-Procedimiento)
 * [5. Funcionalidades](#5-Funcionalidades)
 * [6. Tecnologías utilizadas](#6-Tecnologías-utilizadas)
-* [7. Bibliografía](#7-Bibliografía)
 
 
 ***
 
 ## 1. Descripción de Data Lovers
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+Data Lovers es un proyecto interactivo que te permite explorar y obtener información detallada sobre las películas del Studio Ghibli. Con una interfaz intuitiva y fácil de usar, este proyecto te sumerge en el fascinante mundo de las películas de animación japonesa.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+Con Data Lovers, puedes navegar a través de una amplia selección de películas del Studio Ghibli y descubrir detalles clave como el título, el director, el productor, la fecha de lanzamiento y la calificación (RT SCORE). Cada película viene acompañada de una descripción que te sumerge en su historia y te brinda una visión general de su trama.
 
-El proyecto Data Lovers es una iniciativa que busca facilitar el acceso y la comprensión de grandes conjuntos de datos a través de una interfaz interactiva. Proporciona a los usuarios herramientas para filtrar, ordenar y visualizar la información de manera clara y concisa.
+Una de las características destacadas de Data Lovers es la capacidad de filtrar las películas según el director. Puedes seleccionar un director específico del Studio Ghibli y ver instantáneamente las películas que han sido dirigidas por esa persona en particular. Esto te permite explorar la filmografía de tus directores favoritos o descubrir nuevas películas de directores que te interesen.
 
-Data Lovers se inspira en el creciente campo del análisis de datos y la visualización de información. Con el aumento en la cantidad de datos disponibles en diversas áreas, desde el ámbito empresarial hasta el científico, se ha vuelto cada vez más importante encontrar formas efectivas de extraer conocimiento útil de esos datos. Data Lovers busca precisamente eso, brindar una plataforma donde los usuarios puedan explorar y comprender los datos de manera intuitiva y significativa.
+Además, Data Lovers te brinda la opción de ordenar las películas según diferentes criterios. Puedes organizarlas alfabéticamente en orden ascendente o descendente, lo que facilita la búsqueda de películas específicas. También puedes ordenarlas por su fecha de lanzamiento, ya sea de forma ascendente (más recientes primero) o descendente (más antiguas primero). Si estás interesado en las calificaciones, puedes ordenar las películas por su puntuación, lo que te permite descubrir las mejores o peores películas según el RT SCORE.
+
+No solo te limitas a explorar las películas, sino que también puedes sumergirte en el mundo de los personajes principales. Data Lovers te permite ver información detallada sobre los personajes principales de cada película, incluyendo su nombre, imagen, edad, género y especie. Esta característica te brinda un vistazo más cercano a los personajes que dan vida a las historias del Studio Ghibli.
+
+Por último, Data Lovers también te ofrece la posibilidad de disfrutar de los pósters de las películas. Mediante un botón dedicado, puedes explorar una galería de pósters seleccionados y admirar el arte visual de cada película.
 
 La plataforma utiliza tecnologías web modernas, como HTML, CSS y JavaScript, para crear una interfaz de usuario atractiva y fácil de usar. Además, se aplican técnicas de visualización de datos para representar la información de manera visualmente atractiva y comprensible.
 
@@ -167,7 +164,3 @@ Features/características extra sugeridas:
   [Chart.js](https://www.chartjs.org/)
   o [Google Charts](https://developers.google.com/chart/).
 * 100% Coverage
-
-## 7. Bibliografía
-
-* Smith, J. (2022). "The Power of Data Visualization: How Visualizing Data Can Enhance Understanding". Recuperado el 4 de julio de 2023
