@@ -150,7 +150,17 @@ en la sección de [Consideraciones técnicas](#srcdatajs).
 
 ## 5. Funcionalidades
 
+* Mostrar películas: Permite mostrar una lista de películas de Studio Ghibli. Cada película se representa con su título, director, productor, fecha de lanzamiento, puntaje y descripción.
 
+* Filtrar películas por director: Los usuarios pueden seleccionar un director específico de Studio Ghibli y filtrar la lista de películas para mostrar solo las películas dirigidas por ese director.
+
+* Ordenar películas: Los usuarios pueden ordenar la lista de películas según diferentes criterios, como orden alfabético, fecha de lanzamiento o puntaje. Pueden elegir si desean ordenar de forma ascendente o descendente.
+
+* Mostrar personajes principales: Permite mostrar los personajes principales de cada película. Al hacer clic en el botón correspondiente, se mostrará una lista de los personajes principales junto con su información relevante, como edad, género y especie.
+
+* Filtrar y mostrar carteles: Hay una funcionalidad adicional que permite filtrar las películas y mostrar solo aquellas que tienen carteles disponibles. Al hacer clic en el botón correspondiente, se mostrarán los carteles de las películas seleccionadas.
+
+* Pruebas unitarias: Además de las funcionalidades mencionadas, también incluye pruebas unitarias para verificar el correcto funcionamiento de las diferentes funciones y componentes. Las pruebas unitarias se utilizan para validar el comportamiento esperado de las funciones y garantizar que no haya errores o fallos en el código. Esto ayuda a mejorar la calidad y confiabilidad del proyecto. Las pruebas unitarias se implementan utilizando frameworks o bibliotecas de pruebas unitarias, como Jest, y se escriben para cada función o componente importante del proyecto. Estas pruebas evalúan los casos de uso más comunes y los casos límite para asegurarse de que el código funcione correctamente en diferentes situaciones. Las pruebas unitarias son una parte esencial del desarrollo de software, ya que ayudan a detectar y corregir errores antes de que se implemente el código en producción, lo que garantiza un producto final más confiable y robusto.
 
 
 
