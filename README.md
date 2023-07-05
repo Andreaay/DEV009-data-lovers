@@ -87,18 +87,61 @@ En Trello, creamos tableros que representaban diferentes aspectos del proyecto, 
 A medida que avanzabamos en el proyecto, ibamos moviendo la información de cada lista para reflejar su estado actual. Esto nos permitió visualizar rápidamente el progreso y asegurarnos de que todas las tareas estuvieran siendo abordadas de manera eficiente.
 
 ### Historias de usuario
+    La pagina web esta pensada para conocedores y no conocedores de Studios Ghibli.
+    Los usuarios deben poder interactuar con la página web, que les permita desplegar la información ordenada de distintas maneras: por termporalidad, podrá diferenciar las obras que realizaron los distintos directores o ver el score ordenado de mayor  a menor.
+    La información proporcionada debe ser clara, concisa y fácilmente comprensible para los usuarios.
+    Los usuarios deben tener la oportunidad de aprender y ampliar sus conocimientos sobre Studios Ghibli a través de la página web.
+    La página web debe presentar la información de manera atractiva y visualmente agradable, utilizando elementos visuales relacionados con las obras de Studios Ghibli.
+    Que los elementos que conforman la información sobre la película sean 7 elementos como descripción básica.
+    
+    
+Historia No. 1 : “Yo como usuario quiero tener interacción para tener la oportunida de aprender o conocer más acerca de estudios Ghibli, en este caso sobre la temporalidad en la que fueron creadas las las 20 obras de Studios Ghibli.”
+‌
+CRITERIOS DE ACEPTACIÓN:
+    Se creará un select, que permita al usuario escoger entre (old y new) que desplegará las peliculas ordenadas de nuevas a viejas y de vierjas a nuevas.
+    La página web debe ser accesible y comprensible tanto para conocedores como para no conocedores de Studios Ghibli.
+    Los usuarios deben poder interactuar con la página web para obtener información sobre la temporalidad ( OLD- NEW) en la que fueron creadas las 20 obras de        Studios Ghibli.
+    La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
+    
+Historia No.2 : "Yo como usuaria quiero conocer las películas producidas por todos los  directores, seleccionando cada nombre y al momento de hacerlo se desplieguen solo las películas de cada director."
+CRITERIOS DE ACEPTACIÓN.
+    La página web debe mostrar las obras de todos los distintos directores de Studios Ghibli.
+    Los usuarios deben tener la opción de seleccionar el nombre de cada director.
+    Al seleccionar el nombre de un director, solo se desplegarán las películas asociadas a ese director.
+    Las películas asociadas a cada director deben desplegarse de manera clara y ordenada.
+    La información de las películas debe incluir su título y una descripción.
+    Los usuarios deben poder regresar a la vista general de los directores y seleccionar otro director para ver sus películas.
+    La navegación entre los directores y las películas debe ser fluida y fácil de usar.
+    Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
 
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
+    
+Historia No. 3: "Yo como usuario quiero conocer el orden de mayor a menor y de menor a mayor de la calificación que tiene la pelicula para poder tener claro cuál me convendría ver a futuro."
+ CRITERIOS DE ACEPTACIÓN.
+    La página web debe mostrar las obras de todos los distintos directores de Studios Ghibli, por order , tomando como referencia la calificación del 1 al 100.
+    Las pelicualas desplegadas tendrán que estar ordenadas del 100- 0 y del 0-100.
+    Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
 
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
+    
+  Historia no. 4: "Para mi como usuario es importante poder ver las imágenes de las 20 películas, que se muestren sólo los flyers con el nombre de la película."
+CRITERIOS DE ACEPTACIÓN:
+    La página web debe mostrar imágenes de las 20 películas de Studios Ghibli.
+    Las imágenes mostradas deben ser exclusivamente los flyers promocionales de cada película.
+    Las imágenes y los nombres de las películas deben estar presentados de manera ordenada y organizada en la página web.
+    Los usuarios deben poder ver todas las imágenes de las películas sin dificultades ni restricciones.
+    La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
+    
+Historia no. 5 : "Yo como usuaria puedo ver sólo las características e imagen de todos los personajes principales de cada una de las películas."
+CRITERIOS DE ACEPTACIÓN:
+    La página web debe mostrar solo los personajes principales de cada una de las películas de Studios Ghibli.
+    Se deben incluir imágenes de los personajes principales junto con sus respectivas características.
+    Las imágenes de los personajes deben ser claras y de alta calidad.
+    Junto a cada imagen de personaje, se deben mostrar las características relevantes, como el nombre, lel género y otros detalles importantes.
+    Los usuarios deben poder acceder a la información de los personajes de manera intuitiva y sin dificultades.
+    La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
+
+    
 ### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
@@ -121,38 +164,12 @@ El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
 desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
 diseño debe seguir los fundamentos de _visual design_.
 
+
 #### Testeos de usabilidad
+1.- Nuestos test de usuabilidad prueban que el dom de Java Script funciene de la manera correcto y se ejecute de manera correcta las funciones eespecificas de (sort) y (filter).
+Los puedes verificar al escribir en la terminal ( npm run test)
+2.- De acuerdo a nuestro fed bag de usuario se creo una nueva historia de usuario (Historia no. 3 "SCORE"),después de mostrar el prototipo de alta fidelidad los usuarios pidieron una opción que destaque las calificaciones ordenadas de mayor a menor y de menor a mayor de cada una de las películas.
 
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-Tu tiempo de hacking es escaso, así que deberás priorizar
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
-   etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita.
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
-
-### Pruebas unitarias
-
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
 
 ## 5. Funcionalidades
 
