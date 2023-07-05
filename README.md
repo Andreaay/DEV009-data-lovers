@@ -201,6 +201,8 @@ Eealizamos pruebas del prototipo de alta fidelidad en Figma, involucrando a usua
 
 ![Posters](https://github.com/Andreaay/DEV009-data-lovers/blob/5213eda7426e86554b0248ffae5def521082e367/posters.jpg)
 
+![Main characters](https://github.com/Andreaay/DEV009-data-lovers/blob/22f2d8145a082ed24183fc358c85f54dd905941d/MAIN%20CHARACTERS.png)
+
 #### Testeos de usabilidad
 
 1.- Nuestos test de usuabilidad prueban que el dom de Java Script funciene de la manera correcto y se ejecute de manera correcta las funciones eespecificas de (sort) y (filter).
