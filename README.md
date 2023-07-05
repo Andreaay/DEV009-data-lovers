@@ -175,8 +175,11 @@ diseño debe seguir los fundamentos de _visual design_.
 
 
 #### Testeos de usabilidad
+
 1.- Nuestos test de usuabilidad prueban que el dom de Java Script funciene de la manera correcto y se ejecute de manera correcta las funciones eespecificas de (sort) y (filter).
 Los puedes verificar al escribir en la terminal ( npm run test)
+
+
 2.- De acuerdo a nuestro fed bag de usuario se creo una nueva historia de usuario (Historia no. 3 "SCORE"),después de mostrar el prototipo de alta fidelidad los usuarios pidieron una opción que destaque las calificaciones ordenadas de mayor a menor y de menor a mayor de cada una de las películas.
 
 
