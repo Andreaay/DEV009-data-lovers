@@ -179,6 +179,7 @@ Para mostrar nuestro prototipo de baja fidelidad, hicimos 4 diferentes pantallas
 
 ![Directors](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Home.png)
 
+![SCORE]()
 
 ![Posters](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Home%20(1).png)
 
