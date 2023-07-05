@@ -8,6 +8,7 @@ const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
 const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
 const flyersButton = document.getElementById("flyers-Button")
+
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
   peliculasList.innerHTML = "";//Limpiador
   for (let i = 0; i < parametro.length; i++) {
@@ -50,9 +51,10 @@ function mostrarPersonaje(parametro) {
         </section>
     </div>
     `;
-    const peliculaItem = document.createElement('ul'); //se utiliza ul para poder identificarlo en CSS
+    const peliculaItem = document.createElement('li'); //se utiliza ul para poder identificarlo en CSS
     peliculaItem.innerHTML = contenidoHTML;
     peliculasList.appendChild(peliculaItem);
+    
   }
 }
 // Event Listeners

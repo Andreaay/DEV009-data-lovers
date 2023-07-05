@@ -9,7 +9,7 @@ export const sortAlphabeticYear = (listaPeliculas,option) => {//lista pelicualas
   //dirección es el parametro que indica si debe de ser ascendente o desendente
   const resultSort= listaPeliculas.sort((a,b) => {
     if (option === "nuevas"){
-    return parseInt(a.release_date) < parseInt(b.release_date)
+      return parseInt(a.release_date) < parseInt(b.release_date)
     } else if (option ==="viejas"){
       return parseInt(a.release_date) > parseInt( b.release_date)//console log hizo que dejara de funcionar todo
     } else if (option === "alfabeto"){
