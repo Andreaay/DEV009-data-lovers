@@ -87,21 +87,24 @@ En Trello, creamos tableros que representaban diferentes aspectos del proyecto, 
 A medida que avanzabamos en el proyecto, ibamos moviendo la información de cada lista para reflejar su estado actual. Esto nos permitió visualizar rápidamente el progreso y asegurarnos de que todas las tareas estuvieran siendo abordadas de manera eficiente.
 
 ### Historias de usuario
-    La pagina web esta pensada para conocedores y no conocedores de Studios Ghibli.
-    Los usuarios deben poder interactuar con la página web, que les permita desplegar la información ordenada de distintas maneras: por termporalidad, podrá diferenciar las obras que realizaron los distintos directores o ver el score ordenado de mayor  a menor.
+
+
+    La pagina web esta pensada para conocedores y no conocedores de Studio Ghibli.
+    Los usuarios deben poder interactuar con la página web, que les permita desplegar la información ordenada de distintas maneras: por termporalidad, podrá diferenciar las obras que realizaron los distintos directores o ver el score ordenado de mayor a menor.
     La información proporcionada debe ser clara, concisa y fácilmente comprensible para los usuarios.
-    Los usuarios deben tener la oportunidad de aprender y ampliar sus conocimientos sobre Studios Ghibli a través de la página web.
-    La página web debe presentar la información de manera atractiva y visualmente agradable, utilizando elementos visuales relacionados con las obras de Studios Ghibli.
+    Los usuarios deben tener la oportunidad de aprender y ampliar sus conocimientos sobre Studio Ghibli a través de la página web.
+    La página web debe presentar la información de manera atractiva y visualmente agradable, utilizando elementos visuales relacionados con las obras de Studio Ghibli.
     Que los elementos que conforman la información sobre la película sean 7 elementos como descripción básica.
     
     
-Historia No. 1 : “Yo como usuario quiero tener interacción para tener la oportunida de aprender o conocer más acerca de estudios Ghibli, en este caso sobre la temporalidad en la que fueron creadas las las 20 obras de Studios Ghibli.”
+Historia No. 1 : “Yo como usuario quiero tener interacción para tener la oportunida de aprender o conocer más acerca de Studio Ghibli, en este caso sobre la temporalidad en la que fueron creadas las obras de Studio Ghibli y su orden alfabético.”
 ‌
 
 CRITERIOS DE ACEPTACIÓN:
-    Se creará un select, que permita al usuario escoger entre (old y new) que desplegará las peliculas ordenadas de nuevas a viejas y de vierjas a nuevas.
+    Se creará un select, que permita al usuario escoger entre A-Z, Z-A, old y new, que desplegará las peliculas ordenadas de la A a la Z, de la Z a la A, de nuevas a viejas y de viejas a nuevas.
     La página web debe ser accesible y comprensible tanto para conocedores como para no conocedores de Studios Ghibli.
-    Los usuarios deben poder interactuar con la página web para obtener información sobre la temporalidad ( OLD- NEW) en la que fueron creadas las 20 obras de        Studios Ghibli.
+    Los usuarios deben poder interactuar con la página web para obtener información sobre la temporalidad ( OLD- NEW) en la que fueron creadas las películas de Studios Ghibli.
+    Los usuarios deben poder interactuar con la página web para obtener información sobre el orden alfabético ( OLD- NEW) de las películas de Studios Ghibli.
     La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
     
@@ -109,7 +112,7 @@ Historia No.2 : "Yo como usuaria quiero conocer las películas producidas por to
 
 
 CRITERIOS DE ACEPTACIÓN.
-    La página web debe mostrar las obras de todos los distintos directores de Studios Ghibli.
+    La página web debe mostrar las obras de todos los distintos directores de Studio Ghibli.
     Los usuarios deben tener la opción de seleccionar el nombre de cada director.
     Al seleccionar el nombre de un director, solo se desplegarán las películas asociadas a ese director.
     Las películas asociadas a cada director deben desplegarse de manera clara y ordenada.
@@ -123,18 +126,18 @@ Historia No. 3: "Yo como usuario quiero conocer el orden de mayor a menor y de m
  
  
  CRITERIOS DE ACEPTACIÓN.
-    La página web debe mostrar las obras de todos los distintos directores de Studios Ghibli, por order , tomando como referencia la calificación del 1 al 100.
+    La página web debe mostrar las obras de todos los distintos directores de Studio Ghibli, por order , tomando como referencia la calificación del 1 al 100.
     Las pelicualas desplegadas tendrán que estar ordenadas del 100- 0 y del 0-100.
     Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
 
     
-  Historia no. 4: "Para mi como usuario es importante poder ver las imágenes de las 20 películas, que se muestren sólo los flyers con el nombre de la película."
+  Historia no. 4: "Para mi como usuario es importante poder ver las imágenes de todas las películas, que se muestren sólo los flyers."
 
 
 CRITERIOS DE ACEPTACIÓN:
-    La página web debe mostrar imágenes de las 20 películas de Studios Ghibli.
+    La página web debe mostrar imágenes de todas las películas de Studio Ghibli.
     Las imágenes mostradas deben ser exclusivamente los flyers promocionales de cada película.
-    Las imágenes y los nombres de las películas deben estar presentados de manera ordenada y organizada en la página web.
+    Las imágenes deben estar presentados de manera ordenada y organizada en la página web.
     Los usuarios deben poder ver todas las imágenes de las películas sin dificultades ni restricciones.
     La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
@@ -143,10 +146,10 @@ Historia no. 5 : "Yo como usuaria puedo ver sólo las características e imagen 
 
 
 CRITERIOS DE ACEPTACIÓN:
-    La página web debe mostrar solo los personajes principales de cada una de las películas de Studios Ghibli.
+    La página web debe mostrar solo los personajes principales de cada una de las películas de Studio Ghibli.
     Se deben incluir imágenes de los personajes principales junto con sus respectivas características.
     Las imágenes de los personajes deben ser claras y de alta calidad.
-    Junto a cada imagen de personaje, se deben mostrar las características relevantes, como el nombre, lel género y otros detalles importantes.
+    Junto a cada imagen de personaje, se deben mostrar las características relevantes, como el nombre, el género y otros detalles importantes.
     Los usuarios deben poder acceder a la información de los personajes de manera intuitiva y sin dificultades.
     La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
@@ -155,10 +158,20 @@ CRITERIOS DE ACEPTACIÓN:
 
 #### Prototipo de baja fidelidad
 
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
+Antes de comenzar a desarrollar la interfaz de nuestra aplicación basada en Studio Ghibli, decidimos crear un prototipo de baja fidelidad en Canva. El objetivo era visualizar y probar las ideas y funcionalidades clave del proyecto para proporcionar una experiencia atractiva a los fanáticos de las películas de Studio Ghibli.
+
+
+Elegimos Canva como la herramienta para crear el prototipo de baja fidelidad debido a su facilidad de uso y variedad de elementos gráficos. Canva nos permitió diseñar de forma rápida y sencilla las pantallas principales de nuestra aplicación.
+
+
+Buscábamos evaluar la estructura de navegación entre las películas, la visualización de la información relevante y la disposición de los elementos en la interfaz conforme a las necesidades de nuestros usuarios.
+
+
+Compartimos el prototipo de baja fidelidad con personas interesadas en Studio Ghibli para obtener su retroalimentación y comentarios. Esta etapa nos permitió identificar posibles mejoras en la organización de las películas, la accesibilidad de la información y la navegación, antes de avanzar al desarrollo de la interfaz de alta fidelidad.
+
+Para mostrar nuestro prototipo de baja fidelidad, hicimos 4 diferentes pantallas que fueron: "Home", "Order", "Directors", "Posters" y "Main characters"
+
+![prototipo de baja fidelidad home studio ghibli.png](https://github.com/Andreaay/DEV009-data-lovers/blob/e38dd2604eb653c2d4ceff5aabc26cfbb5894def/prototipo%20de%20baja%20fidelidad%20home%20studio%20ghibli.png)
 
 #### Prototipo de alta fidelidad
 
