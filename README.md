@@ -97,6 +97,7 @@ A medida que avanzabamos en el proyecto, ibamos moviendo la información de cada
     
 Historia No. 1 : “Yo como usuario quiero tener interacción para tener la oportunida de aprender o conocer más acerca de estudios Ghibli, en este caso sobre la temporalidad en la que fueron creadas las las 20 obras de Studios Ghibli.”
 ‌
+
 CRITERIOS DE ACEPTACIÓN:
     Se creará un select, que permita al usuario escoger entre (old y new) que desplegará las peliculas ordenadas de nuevas a viejas y de vierjas a nuevas.
     La página web debe ser accesible y comprensible tanto para conocedores como para no conocedores de Studios Ghibli.
@@ -105,6 +106,8 @@ CRITERIOS DE ACEPTACIÓN:
 
     
 Historia No.2 : "Yo como usuaria quiero conocer las películas producidas por todos los  directores, seleccionando cada nombre y al momento de hacerlo se desplieguen solo las películas de cada director."
+
+
 CRITERIOS DE ACEPTACIÓN.
     La página web debe mostrar las obras de todos los distintos directores de Studios Ghibli.
     Los usuarios deben tener la opción de seleccionar el nombre de cada director.
@@ -117,6 +120,8 @@ CRITERIOS DE ACEPTACIÓN.
 
     
 Historia No. 3: "Yo como usuario quiero conocer el orden de mayor a menor y de menor a mayor de la calificación que tiene la pelicula para poder tener claro cuál me convendría ver a futuro."
+ 
+ 
  CRITERIOS DE ACEPTACIÓN.
     La página web debe mostrar las obras de todos los distintos directores de Studios Ghibli, por order , tomando como referencia la calificación del 1 al 100.
     Las pelicualas desplegadas tendrán que estar ordenadas del 100- 0 y del 0-100.
@@ -124,6 +129,8 @@ Historia No. 3: "Yo como usuario quiero conocer el orden de mayor a menor y de m
 
     
   Historia no. 4: "Para mi como usuario es importante poder ver las imágenes de las 20 películas, que se muestren sólo los flyers con el nombre de la película."
+
+
 CRITERIOS DE ACEPTACIÓN:
     La página web debe mostrar imágenes de las 20 películas de Studios Ghibli.
     Las imágenes mostradas deben ser exclusivamente los flyers promocionales de cada película.
@@ -133,6 +140,8 @@ CRITERIOS DE ACEPTACIÓN:
 
     
 Historia no. 5 : "Yo como usuaria puedo ver sólo las características e imagen de todos los personajes principales de cada una de las películas."
+
+
 CRITERIOS DE ACEPTACIÓN:
     La página web debe mostrar solo los personajes principales de cada una de las películas de Studios Ghibli.
     Se deben incluir imágenes de los personajes principales junto con sus respectivas características.
