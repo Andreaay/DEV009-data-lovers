@@ -199,6 +199,10 @@ Eealizamos pruebas del prototipo de alta fidelidad en Figma, involucrando a usua
 
 ![Home](https://github.com/Andreaay/DEV009-data-lovers/blob/5213eda7426e86554b0248ffae5def521082e367/HOME%20(3).png)
 
+![SORT](https://github.com/Andreaay/DEV009-data-lovers/blob/9afc872b57ca2eef5d8e052d0629fc8436669733/SORT.png)
+
+![DIRECTOR]()
+
 ![Posters](https://github.com/Andreaay/DEV009-data-lovers/blob/5213eda7426e86554b0248ffae5def521082e367/posters.jpg)
 
 ![Main characters](https://github.com/Andreaay/DEV009-data-lovers/blob/22f2d8145a082ed24183fc358c85f54dd905941d/MAIN%20CHARACTERS.png)
