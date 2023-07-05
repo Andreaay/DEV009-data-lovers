@@ -169,7 +169,7 @@ Buscábamos evaluar la estructura de navegación entre las películas, la visual
 
 Compartimos el prototipo de baja fidelidad con personas interesadas en Studio Ghibli para obtener su retroalimentación y comentarios. Esta etapa nos permitió identificar posibles mejoras en la organización de las películas, la accesibilidad de la información y la navegación, antes de avanzar al desarrollo de la interfaz de alta fidelidad.
 
-Para mostrar nuestro prototipo de baja fidelidad, hicimos 4 diferentes pantallas que fueron: "Home", "Order", "Directors", "Posters" y "Main characters"
+Para mostrar nuestro prototipo de baja fidelidad, hicimos 4 diferentes pantallas que fueron: "Home", "Order", "Directors", "Posters" y "Main characters".
 
 ![prototipo de baja fidelidad home studio ghibli.png](https://github.com/Andreaay/DEV009-data-lovers/blob/e38dd2604eb653c2d4ceff5aabc26cfbb5894def/prototipo%20de%20baja%20fidelidad%20home%20studio%20ghibli.png)
 
@@ -186,17 +186,20 @@ Para mostrar nuestro prototipo de baja fidelidad, hicimos 4 diferentes pantallas
 
 #### Prototipo de alta fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
+Después de haber diseñado y probado el prototipo de baja fidelidad en Canva, pasamos a desarrollar el prototipo de alta fidelidad para nuestra aplicación basada en Studio Ghibli. El objetivo principal era refinar y detallar el diseño, así como implementar la funcionalidad de puntuación (rt score) para que los usuarios pudieran identificar las películas y su calificación.
 
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
+Utilizamos Figma como la herramienta principal para crear el prototipo de alta fidelidad debido a su capacidad para crear diseños avanzados e interactivos. Aprovechamos los recursos adicionales como paletas de colores, íconos y fuentes relevantes a Studio Ghibli para enriquecer el diseño. 
 
+Tomaste el diseño de baja fidelidad y lo refinamos en el prototipo de alta fidelidad en Figma. Ajustaste los tamaños, los espacios y los detalles visuales para lograr un diseño más pulido y estéticamente atractivo. Aseguramos mantener la coherencia visual en todas las pantallas y elementos del prototipo.
+
+Incorporamos la funcionalidad de puntuación (rt score) en el prototipo de alta fidelidad en Figma. Agregamos elementos interactivos, como botones para permitir a los usuarios ver la calificación de las películas. Creamos transiciones suaves entre pantallas como botones.
+
+Eealizamos pruebas del prototipo de alta fidelidad en Figma, involucrando a usuarios y recopilando retroalimentación. Utilizamos los comentarios recibidos para realizar ajustes y mejoras en el diseño y la funcionalidad, asegurándonos de que el prototipo cumpla con las expectativas de los usuarios.
+
+
+![Home](https://github.com/Andreaay/DEV009-data-lovers/blob/5213eda7426e86554b0248ffae5def521082e367/HOME%20(3).png)
+
+![Posters](https://github.com/Andreaay/DEV009-data-lovers/blob/5213eda7426e86554b0248ffae5def521082e367/posters.jpg)
 
 #### Testeos de usabilidad
 
