@@ -100,6 +100,7 @@ function mostrarPersonaje(parametro) {
     </div>
     `;
     const peliculaItem = document.createElement('ul'); //se utiliza ul para poder identificarlo en CSS
+    peliculaItem.classList.add('mainCharacters');
     peliculaItem.innerHTML = contenidoHTML;
     peliculasList.appendChild(peliculaItem);
   }
