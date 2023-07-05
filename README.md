@@ -179,7 +179,6 @@ Para mostrar nuestro prototipo de baja fidelidad, hicimos 4 diferentes pantallas
 
 ![Directors](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Home.png)
 
-![SCORE](https://github.com/Andreaay/DEV009-data-lovers/blob/63646007aede9fad774d0b695ecdb5d014c5ef17/SCORE.png)
 
 ![Posters](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Home%20(1).png)
 
@@ -203,6 +202,8 @@ Eealizamos pruebas del prototipo de alta fidelidad en Figma, involucrando a usua
 ![SORT](https://github.com/Andreaay/DEV009-data-lovers/blob/9afc872b57ca2eef5d8e052d0629fc8436669733/SORT.png)
 
 ![DIRECTOR](https://github.com/Andreaay/DEV009-data-lovers/blob/6a8f5556e6ecfa9ca12ed36c5497fb86cc25b153/DIRECTOR.png)
+
+![SCORE](https://github.com/Andreaay/DEV009-data-lovers/blob/63646007aede9fad774d0b695ecdb5d014c5ef17/SCORE.png)
 
 ![Posters](https://github.com/Andreaay/DEV009-data-lovers/blob/5213eda7426e86554b0248ffae5def521082e367/posters.jpg)
 
