@@ -101,7 +101,9 @@ La página web debe presentar la información de manera atractiva y visualmente 
 Que los elementos que conforman la información sobre la película sean 7 elementos como descripción básica.
     
     
-### Historia No. 1 : “Yo como usuario quiero tener interacción para tener la oportunida de aprender o conocer más acerca de Studio Ghibli, en este caso sobre la temporalidad en la que fueron creadas las obras de Studio Ghibli y su orden alfabético.”
+### Historia No. 1  
+
+“Yo como usuario quiero tener interacción para tener la oportunida de aprender o conocer más acerca de Studio Ghibli, en este caso sobre la temporalidad en la que fueron creadas las obras de Studio Ghibli y su orden alfabético.”
 ‌
 
 CRITERIOS DE ACEPTACIÓN:
@@ -112,7 +114,9 @@ CRITERIOS DE ACEPTACIÓN:
     La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
     
-### Historia No.2 : "Yo como usuaria quiero conocer las películas producidas por todos los  directores, seleccionando cada nombre y al momento de hacerlo se desplieguen solo las películas de cada director."
+### Historia No.2 
+
+"Yo como usuaria quiero conocer las películas producidas por todos los  directores, seleccionando cada nombre y al momento de hacerlo se desplieguen solo las películas de cada director."
 
 
 CRITERIOS DE ACEPTACIÓN.
@@ -126,7 +130,9 @@ CRITERIOS DE ACEPTACIÓN.
     Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
 
     
-### Historia No. 3: "Yo como usuario quiero conocer el orden de mayor a menor y de menor a mayor de la calificación que tiene la pelicula para poder tener claro cuál me convendría ver a futuro."
+### Historia No. 3
+
+"Yo como usuario quiero conocer el orden de mayor a menor y de menor a mayor de la calificación que tiene la pelicula para poder tener claro cuál me convendría ver a futuro."
  
  
  CRITERIOS DE ACEPTACIÓN.
@@ -135,7 +141,9 @@ CRITERIOS DE ACEPTACIÓN.
     Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
 
     
-### Historia no. 4: "Para mi como usuario es importante poder ver las imágenes de todas las películas, que se muestren sólo los flyers."
+### Historia no. 4
+
+"Para mi como usuario es importante poder ver las imágenes de todas las películas, que se muestren sólo los flyers."
 
 
 CRITERIOS DE ACEPTACIÓN:
@@ -146,7 +154,9 @@ CRITERIOS DE ACEPTACIÓN:
     La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
     
-### Historia no. 5 : "Yo como usuaria puedo ver sólo las características e imagen de todos los personajes principales de cada una de las películas."
+### Historia no. 5
+
+"Yo como usuaria puedo ver sólo las características e imagen de todos los personajes principales de cada una de las películas."
 
 
 CRITERIOS DE ACEPTACIÓN:
