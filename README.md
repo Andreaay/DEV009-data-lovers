@@ -121,14 +121,15 @@ CRITERIOS DE ACEPTACIÓN:
 
 
 CRITERIOS DE ACEPTACIÓN.
-    La página web debe mostrar las obras de todos los distintos directores de Studio Ghibli.
-    Los usuarios deben tener la opción de seleccionar el nombre de cada director.
-    Al seleccionar el nombre de un director, solo se desplegarán las películas asociadas a ese director.
-    Las películas asociadas a cada director deben desplegarse de manera clara y ordenada.
-    La información de las películas debe incluir su título y una descripción.
-    Los usuarios deben poder regresar a la vista general de los directores y seleccionar otro director para ver sus películas.
-    La navegación entre los directores y las películas debe ser fluida y fácil de usar.
-    Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
+
+* La página web debe mostrar las obras de todos los distintos directores de Studio Ghibli.
+* Los usuarios deben tener la opción de seleccionar el nombre de cada director.
+* Al seleccionar el nombre de un director, solo se desplegarán las películas asociadas a ese director.
+* Las películas asociadas a cada director deben desplegarse de manera clara y ordenada.
+* La información de las películas debe incluir su título y una descripción.
+* Los usuarios deben poder regresar a la vista general de los directores y seleccionar otro director para ver sus películas.
+* La navegación entre los directores y las películas debe ser fluida y fácil de usar.
+* Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
 
     
 ### Historia No. 3
@@ -137,9 +138,10 @@ CRITERIOS DE ACEPTACIÓN.
  
  
  CRITERIOS DE ACEPTACIÓN.
-    La página web debe mostrar las obras de todos los distintos directores de Studio Ghibli, por order , tomando como referencia la calificación del 1 al 100.
-    Las pelicualas desplegadas tendrán que estar ordenadas del 100- 0 y del 0-100.
-    Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
+ 
+* La página web debe mostrar las obras de todos los distintos directores de Studio Ghibli, por order , tomando como referencia la calificación del 1 al 100.
+* Las pelicualas desplegadas tendrán que estar ordenadas del 100- 0 y del 0-100.
+* Se deben utilizar elementos visuales relevantes para cada directores y sus respectivas películas.
 
     
 ### Historia no. 4
@@ -148,11 +150,12 @@ CRITERIOS DE ACEPTACIÓN.
 
 
 CRITERIOS DE ACEPTACIÓN:
-    La página web debe mostrar imágenes de todas las películas de Studio Ghibli.
-    Las imágenes mostradas deben ser exclusivamente los flyers promocionales de cada película.
-    Las imágenes deben estar presentados de manera ordenada y organizada en la página web.
-    Los usuarios deben poder ver todas las imágenes de las películas sin dificultades ni restricciones.
-    La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
+
+* La página web debe mostrar imágenes de todas las películas de Studio Ghibli.
+* Las imágenes mostradas deben ser exclusivamente los flyers promocionales de cada película.
+* Las imágenes deben estar presentados de manera ordenada y organizada en la página web.
+* Los usuarios deben poder ver todas las imágenes de las películas sin dificultades ni restricciones.
+* La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
     
 ### Historia no. 5
@@ -161,12 +164,13 @@ CRITERIOS DE ACEPTACIÓN:
 
 
 CRITERIOS DE ACEPTACIÓN:
-    La página web debe mostrar solo los personajes principales de cada una de las películas de Studio Ghibli.
-    Se deben incluir imágenes de los personajes principales junto con sus respectivas características.
-    Las imágenes de los personajes deben ser claras y de alta calidad.
-    Junto a cada imagen de personaje, se deben mostrar las características relevantes, como el nombre, el género y otros detalles importantes.
-    Los usuarios deben poder acceder a la información de los personajes de manera intuitiva y sin dificultades.
-    La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
+
+* La página web debe mostrar solo los personajes principales de cada una de las películas de Studio Ghibli.
+* Se deben incluir imágenes de los personajes principales junto con sus respectivas características.
+* Las imágenes de los personajes deben ser claras y de alta calidad.
+* Junto a cada imagen de personaje, se deben mostrar las características relevantes, como el nombre, el género y otros detalles importantes.
+* Los usuarios deben poder acceder a la información de los personajes de manera intuitiva y sin dificultades.
+* La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
     
 ### Diseño de la Interfaz de Usuario
