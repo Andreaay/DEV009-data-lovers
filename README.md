@@ -88,13 +88,17 @@ A medida que avanzabamos en el proyecto, ibamos moviendo la información de cada
 
 ### Historias de usuario
 
+La pagina web esta pensada para conocedores y no conocedores de Studio Ghibli.
 
-    La pagina web esta pensada para conocedores y no conocedores de Studio Ghibli.
-    Los usuarios deben poder interactuar con la página web, que les permita desplegar la información ordenada de distintas maneras: por termporalidad, podrá diferenciar las obras que realizaron los distintos directores o ver el score ordenado de mayor a menor.
-    La información proporcionada debe ser clara, concisa y fácilmente comprensible para los usuarios.
-    Los usuarios deben tener la oportunidad de aprender y ampliar sus conocimientos sobre Studio Ghibli a través de la página web.
-    La página web debe presentar la información de manera atractiva y visualmente agradable, utilizando elementos visuales relacionados con las obras de Studio Ghibli.
-    Que los elementos que conforman la información sobre la película sean 7 elementos como descripción básica.
+Los usuarios deben poder interactuar con la página web, que les permita desplegar la información ordenada de distintas maneras: por termporalidad, podrá diferenciar las obras que realizaron los distintos directores o ver el score ordenado de mayor a menor.
+
+La información proporcionada debe ser clara, concisa y fácilmente comprensible para los usuarios.
+
+Los usuarios deben tener la oportunidad de aprender y ampliar sus conocimientos sobre Studio Ghibli a través de la página web.
+
+La página web debe presentar la información de manera atractiva y visualmente agradable, utilizando elementos visuales relacionados con las obras de Studio Ghibli.
+
+Que los elementos que conforman la información sobre la película sean 7 elementos como descripción básica.
     
     
 Historia No. 1 : “Yo como usuario quiero tener interacción para tener la oportunida de aprender o conocer más acerca de Studio Ghibli, en este caso sobre la temporalidad en la que fueron creadas las obras de Studio Ghibli y su orden alfabético.”
