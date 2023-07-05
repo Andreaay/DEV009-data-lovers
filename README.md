@@ -173,6 +173,17 @@ Para mostrar nuestro prototipo de baja fidelidad, hicimos 4 diferentes pantallas
 
 ![prototipo de baja fidelidad home studio ghibli.png](https://github.com/Andreaay/DEV009-data-lovers/blob/e38dd2604eb653c2d4ceff5aabc26cfbb5894def/prototipo%20de%20baja%20fidelidad%20home%20studio%20ghibli.png)
 
+
+![order](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Black%20Playful%20Illustrative%20Timeline%20Infographic.jpg)
+
+
+![Directors](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Home.png)
+
+
+![Posters](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Home%20(1).png)
+
+![Main characters](https://github.com/Andreaay/DEV009-data-lovers/blob/61d8e22a45da6771738a5c407ba564f08d9fade1/Home%20(2).png)
+
 #### Prototipo de alta fidelidad
 
 Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
