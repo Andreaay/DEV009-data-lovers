@@ -1,5 +1,8 @@
 import { filterPoster } from '../src/data.js'; 
+<<<<<<< HEAD
 // import { mostrarPersonaje } from '.main.js';
+=======
+>>>>>>> e1301e0955578841ac06425a54868dc9cb9f26b6
 
 describe('Test de filterPoster', () => {
   it('Test para filtrar sólo el poster de cada película', () => {
@@ -27,6 +30,7 @@ describe('Test de filterPoster', () => {
     expect(posters[0]).toBe('https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg')
     expect(posters[0]).not.toBe('https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg')
   });
+<<<<<<< HEAD
 });
 
 // describe('Test para mostrarPersonaje', () => {
@@ -85,3 +89,6 @@ describe('Test de filterPoster', () => {
 //       expect(resultadoObtenido).toEqual(resultadoEsperado);
 //     });
 //   });
+=======
+});
+>>>>>>> e1301e0955578841ac06425a54868dc9cb9f26b6
