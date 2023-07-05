@@ -107,11 +107,12 @@ Que los elementos que conforman la información sobre la película sean 7 elemen
 ‌
 
 CRITERIOS DE ACEPTACIÓN:
-    Se creará un select, que permita al usuario escoger entre A-Z, Z-A, old y new, que desplegará las peliculas ordenadas de la A a la Z, de la Z a la A, de nuevas a viejas y de viejas a nuevas.
-    La página web debe ser accesible y comprensible tanto para conocedores como para no conocedores de Studios Ghibli.
-    Los usuarios deben poder interactuar con la página web para obtener información sobre la temporalidad ( OLD- NEW) en la que fueron creadas las películas de Studios Ghibli.
-    Los usuarios deben poder interactuar con la página web para obtener información sobre el orden alfabético ( OLD- NEW) de las películas de Studios Ghibli.
-    La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
+
+* Se creará un select, que permita al usuario escoger entre A-Z, Z-A, old y new, que desplegará las peliculas ordenadas de la A a la Z, de la Z a la A, de nuevas a viejas y de viejas a nuevas.
+* La página web debe ser accesible y comprensible tanto para conocedores como para no conocedores de Studios Ghibli.
+* Los usuarios deben poder interactuar con la página web para obtener información sobre la temporalidad ( OLD- NEW) en la que fueron creadas las películas de Studios Ghibli.
+* Los usuarios deben poder interactuar con la página web para obtener información sobre el orden alfabético ( OLD- NEW) de las películas de Studios Ghibli.
+* La página web debe ser responsive y adaptarse a diferentes dispositivos y tamaños de pantalla.
 
     
 ### Historia No.2 
