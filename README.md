@@ -230,11 +230,12 @@ Eealizamos pruebas del prototipo de alta fidelidad en Figma, involucrando a usua
 
 #### Testeos de usabilidad
 
-1.- Nuestos test de usuabilidad prueban que el dom de Java Script funciene de la manera correcto y se ejecute de manera correcta las funciones eespecificas de (sort) y (filter).
-Los puedes verificar al escribir en la terminal ( npm run test)
+1.- Nuestos test de usuabilidad prueban que el DOM de Java Script funcione de la manera correcto y se ejecute de manera correcta las funciones eespecificas de sort y filter. Se pueden verificar al escribir en la terminal npm run test.
 
 
-2.- De acuerdo a nuestro fed bag de usuario se creo una nueva historia de usuario (Historia no. 3 "SCORE"),después de mostrar el prototipo de alta fidelidad los usuarios pidieron una opción que destaque las calificaciones ordenadas de mayor a menor y de menor a mayor de cada una de las películas.
+2.- Después de mostrar el prototipo de baja fidelidad a los usuarios, pidieron una opción que destacara las calificaciones ordenadas de mayor a menor y de menor a mayor de cada una de las películas, y de acuerdo al feedback, creamos una nueva historia de usuario basándonos en su RT SCORE.
+
+3.- De igual manera, después de mostrar nuestro prototipo de fidelidad, los usuarios prefirieron visualizar las películas ordenadas alfabéticamente y por año en lugar de una línea de tiempo. Así es como creamos "SORT".
 
 
 ## 5. Funcionalidades
