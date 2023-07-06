@@ -25,8 +25,9 @@ export const ordenarPorNumeros = (listaPeliculas,campoOrdenar,direccion) => {//l
   return listaPeliculas.sort((a,b) => {
     if (parseInt(a[campoOrdenar])< parseInt(b[campoOrdenar])) {
       return direccion ? -1 : 1;// signo interrogacion con dos puntos es un iif else miniatura se llama ternario
+      //si a es menor que b, coloca a antes que b
     } else if (parseInt(a[campoOrdenar])>parseInt( b[campoOrdenar])) {
-      return direccion ? 1 : -1;
+      return direccion ? 1 : -1;//
     }
     return 0;
   });
@@ -35,4 +36,16 @@ export const filterPoster = (data) => {
   const posters = data.films.filter(pelicula => pelicula.poster !== null && pelicula.poster !== undefined);
   return posters.map(pelicula => pelicula.poster);
 };
+
   
+export const averageCharacters = (film) => {
+  return (film.people.length);
+}
+export const averageCharactersAllFilms = (films) => {
+  let totalPersonajes=0;
+  for (let i = 0; i < films.length; i++) {
+    totalPersonajes = totalPersonajes + films[i].people.length
+  }
+  return (totalPersonajes/films.length);
+}
+
