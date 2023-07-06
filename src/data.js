@@ -35,4 +35,3 @@ export const filterPoster = (data) => {
   const posters = data.films.filter(pelicula => pelicula.poster !== null && pelicula.poster !== undefined);
   return posters.map(pelicula => pelicula.poster);
 };
-  

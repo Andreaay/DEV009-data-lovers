@@ -121,6 +121,10 @@ ol {
     width: 12.5em;
     height: auto;
   }
+  .mainCharacters p {
+    font-size: 1em; 
+    margin: 0.5em; 
+}
 #peliculas-list{
     display: flex;
     flex-wrap: wrap; 
