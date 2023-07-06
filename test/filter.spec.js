@@ -1,8 +1,4 @@
 import { filterPoster } from '../src/data.js'; 
-<<<<<<< HEAD
-// import { mostrarPersonaje } from '.main.js';
-=======
->>>>>>> e1301e0955578841ac06425a54868dc9cb9f26b6
 
 describe('Test de filterPoster', () => {
   it('Test para filtrar sólo el poster de cada película', () => {
@@ -30,65 +26,4 @@ describe('Test de filterPoster', () => {
     expect(posters[0]).toBe('https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg')
     expect(posters[0]).not.toBe('https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg')
   });
-<<<<<<< HEAD
 });
-
-// describe('Test para mostrarPersonaje', () => {
-//     it('Test para validar mostrarPersonaje', () => {
-//       const personaje = [
-//         {
-//           "name": "Pazu",
-//           "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8b/Pazu.jpg",
-//           "gender": "Male",
-//           "age": "13",
-//           "specie": "Human"
-//         },
-//         {
-//           "name": "Satsuki Kusakabe",
-//           "img": "https://static.wikia.nocookie.net/studio-ghibli/images/f/f2/Satsuki_Kusakabe.jpg",
-//           "gender": "Female",
-//           "age": "11",
-//           "specie": "Human"
-//         },
-//         {
-//           "name": "Kiki",
-//           "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/59/Kiki.jpg",
-//           "gender": "Female",
-//           "age": "13",
-//           "eye_color": "Black",
-//           "hair_color": "Brown",
-//           "specie": "Witch"
-//         }
-//       ];
-//       const resultadoEsperado = [
-//         {
-//           "name": "Pazu",
-//           "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8b/Pazu.jpg",
-//           "gender": "Male",
-//           "age": "13",
-//           "specie": "Human"
-//         },
-//         {
-//           "name": "Satsuki Kusakabe",
-//           "img": "https://static.wikia.nocookie.net/studio-ghibli/images/f/f2/Satsuki_Kusakabe.jpg",
-//           "gender": "Female",
-//           "age": "11",
-//           "specie": "Human"
-//         },
-//         {
-//           "name": "Kiki",
-//           "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/59/Kiki.jpg",
-//           "gender": "Female",
-//           "age": "13",
-//           "eye_color": "Black",
-//           "hair_color": "Brown",
-//           "specie": "Witch"
-//         }
-//       ];
-//       const resultadoObtenido = mostrarPersonaje(personaje);
-//       expect(resultadoObtenido).toEqual(resultadoEsperado);
-//     });
-//   });
-=======
-});
->>>>>>> e1301e0955578841ac06425a54868dc9cb9f26b6

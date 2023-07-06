@@ -36,8 +36,6 @@ export const filterPoster = (data) => {
   const posters = data.films.filter(pelicula => pelicula.poster !== null && pelicula.poster !== undefined);
   return posters.map(pelicula => pelicula.poster);
 };
-<<<<<<< HEAD
-=======
 
   
 export const averageCharacters = (film) => {
@@ -51,4 +49,3 @@ export const averageCharactersAllFilms = (films) => {
   return (totalPersonajes/films.length);
 }
 
->>>>>>> 68c8a7a8af912093b54e517e77fcb8e4aee27811

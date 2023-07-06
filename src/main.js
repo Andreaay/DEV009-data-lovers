@@ -1,10 +1,6 @@
 import data from './data/ghibli/ghibli.js';
-<<<<<<< HEAD
-import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster} from "./data.js";
-=======
 import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster, averageCharacters,averageCharactersAllFilms } from "./data.js";
 
->>>>>>> 68c8a7a8af912093b54e517e77fcb8e4aee27811
 
 const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
 const botonHome = document.getElementById("home-button")
