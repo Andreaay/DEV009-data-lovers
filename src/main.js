@@ -2,19 +2,19 @@ import data from './data/ghibli/ghibli.js';
 import { filterDirector, sortAlphabeticYear, ordenarPorNumeros, filterPoster, averageCharacters,averageCharactersAllFilms } from "./data.js";
 
 
-const todasLasPeliculas = data.films;// la constante donde guardamos los 20 objetos de las peliculas
+const todasLasPeliculas = data.films;// donde guardamos los 20 objetos de las peliculas
 const botonHome = document.getElementById("home-button")
 const botonPersonajes = document.getElementById("personajes-button")
-const peliculasList = document.querySelector("#peliculas-list");//Home OL
+const peliculasList = document.querySelector("#peliculas-list");// OL
 const selectorDirectores = document.getElementById("directores")
 const selectorTiempo = document.getElementById("tiempo")
-const selectorCalificacion = document.getElementById("calificaciones")//estaba mal el nombre del id
+const selectorCalificacion = document.getElementById("calificaciones")
 const flyersButton = document.getElementById("flyers-Button")
 
 function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
   peliculasList.innerHTML = "";//Limpiador
-  for (let i = 0; i < parametro.length; i++) { //Intera la información de todas las peliculas
-    const pelicula = parametro[i]; //{$} se utiliza para insertar expresiones dentro de una cadena de texto
+  for (let i = 0; i < parametro.length; i++) { //Itera la información de todas las peliculas
+    const pelicula = parametro[i]; 
     const contenidoHTML = ` 
     <div class="pelicula">
     <section id= "section3" >
@@ -29,7 +29,7 @@ function mostrarPeliculas(parametro) {//parametro hace que sea reutilizable
         <p><strong>Descripción:</strong> ${pelicula.description}</p>
         </section>
     </div>
-    `;
+    `;//{$} se utiliza para insertar expresiones dentro de una cadena de texto
     const peliculaItem = document.createElement('li');
     peliculaItem.innerHTML = contenidoHTML;
     peliculasList.appendChild(peliculaItem);//Esta parte mueve el li dentro del ol creado en HTML
@@ -72,7 +72,7 @@ botonPersonajes.addEventListener('click', function () {//change lee si hay un cl
 flyersButton.addEventListener('click', function () {
   const posters = filterPoster(data);
   peliculasList.innerHTML = ""; // Limpiar la lista antes de mostrar los posters
-  for (let i = 0; i < posters.length; i++) {
+  for (let i = 0; i < posters.length; i++) { // el for va a llegar hasta el largo de los 20 poster
     const img = document.createElement('img');
     img.src = posters[i];
     img.classList.add('flyer')
@@ -82,12 +82,16 @@ flyersButton.addEventListener('click', function () {
 
 mostrarPeliculas(todasLasPeliculas); // este es el carga al inciar la pagina, muestra las 20
 
+
+botonPersonajes.addEventListener('click', function () {//change lee si hay un click en home
+  mostrarPersonaje(todasLasPeliculas);
+})
+
+
+
 function mostrarPersonaje(parametro) {
   peliculasList.innerHTML = "";
-  let totalCharacters = 0;
   for (let i = 0; i < parametro.length; i++) {
-        
-    totalCharacters = totalCharacters + averageCharacters(parametro[i])
     const pelicula = parametro[i];
     const contenidoHTML = `
     <div class="mostrarPersonaje">
@@ -100,13 +104,13 @@ function mostrarPersonaje(parametro) {
         <p><strong>Age:</strong> ${pelicula.people[0].age}</p>
         <p><strong>Gender:</strong> ${pelicula.people[0].gender}</p>
         <p><strong>Species:</strong> ${pelicula.people[0].specie}</p>
-        <p><strong>Number of characters in the movie:</strong> ${averageCharacters(parametro[i])}</p>
+        <p><strong>Number of characters in the movie:</strong> ${averageCharacters(pelicula)}</p>
         <p><strong>Overall average of characters in Studio Ghibli movies: ${averageCharactersAllFilms(parametro)}</p>
         </section> 
     </div>
     `;
     const peliculaItem = document.createElement('ul'); //se utiliza ul para poder identificarlo en CSS
-    peliculaItem.classList.add('mainCharacters');
+    peliculaItem.classList.add('mainCharacters');//Lo utilizamos par amodificar el css
     peliculaItem.innerHTML = contenidoHTML;
     peliculasList.appendChild(peliculaItem);
   }

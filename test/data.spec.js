@@ -6,8 +6,8 @@ describe('Tests de sortAlphabeticYear', () => {
   it('Test para filtrar las peliculas de la A a la Z', () => {
     const peliculas = [
       {title: 'Castle in the Sky'},
+      {title: 'Whisper of the Heart'},
       {title: 'My Neighbors the Yamadas'},
-      {title: 'Whisper of the Heart'}
     ]
     const resultadoEsperado =[
       {title: 'Castle in the Sky'},

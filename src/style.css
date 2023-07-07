@@ -9,11 +9,11 @@ body {
     letter-spacing: 18px;
     font-size: 2.5em;
     position: fixed;/* se quede estatico */
+    top: 0;
     justify-content:center;
     height: 2.1em;
     padding: 10px;
-    width: 100vw;
-    top: 0;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("https://ca-times.brightspotcdn.com/dims4/default/6bf9f98/2147483647/strip/true/crop/2300x1533+239+0/resize/2400x1600!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F84%2Fb0%2F49361759414d8935d078531cc9c9%2Fghi-totoro-select04.jpg");
@@ -23,10 +23,10 @@ body {
     top: 0;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/* crea dos barras*/
     justify-content: center; 
     gap: .5rem;/* distancia */
-    transition: 0.7s;
+    transition: 2s; /* animacion*/
     margin:4rem 0;
     background-color: #B4C8C0;
 }
@@ -35,37 +35,23 @@ button,select {
     margin: 0;
     padding: 0;
     width: auto;
-    overflow: visible;
     background: transparent;
-    color: inherit;
-    font: inherit;
-    line-height: normal;
-    -webkit-font-smoothing: inherit;
-    -moz-osx-font-smoothing: inherit;
-    
-}
-button,
-select{
-    background-color: #B4C8C0;
     color: #1F2124;
     width: 13rem;
     text-align: center;
     padding: .7em 0;
     font-size: 1.0em;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 600;  /* negrita*/
+    text-transform: uppercase;  /* mayusculas*/
 }
 button:hover,
 select:hover{
     background-color: #AABBB4;
     border-bottom: 4px solid  rgb(183, 135, 48);
 }
-.section2 {
-    height: 50px;
-    width: 100px;
-}
+
 li {
-    float: left;
+    
     border: 0.4em solid #DCB761;
     background-color: #B17261;
     color: #1F2124;
@@ -74,7 +60,7 @@ li {
     padding: 0.625em;
     margin: 2.5em 1.25em;
     text-align: left;
-    list-style: none;
+    
     font-size: 1em;
 }
 img {
@@ -97,7 +83,7 @@ ol {
     justify-content: center;
     flex-wrap: wrap;
         width: 100%;
-        gap: 30px;
+        gap: 30px; /* espacio entre una y otra*/
 }
 
 .mainCharacters{
