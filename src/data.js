@@ -9,15 +9,40 @@ export const sortAlphabeticYear = (listaPeliculas,option) => {//lista pelicualas
   //dirección es el parametro que indica si debe de ser ascendente o desendente
   const resultSort= listaPeliculas.sort((a,b) => {
     if (option === "nuevas"){
-      return parseInt(a.release_date) < parseInt(b.release_date)
+      if (parseInt(a.release_date) > parseInt(b.release_date)){
+        return -1;
+      }
+      if (parseInt(a.release_date) < parseInt(b.release_date)){
+        return 1;
+      }
+      return 0;
     } else if (option ==="viejas"){
-      return parseInt(a.release_date) > parseInt( b.release_date)
+      if (parseInt(a.release_date) > parseInt(b.release_date)){
+        return 1;
+      }
+      if (parseInt(a.release_date) < parseInt(b.release_date)){
+        return -1;
+      }
+      return 0;
     } else if (option === "alfabeto"){
-      return a.title> b.title
-    } else{
-      return a.title< b.title
+      if (a.title > b.title) {
+        return 1;
+      }
+      if (a.title < b.title) {
+        return -1;
+      }
+      return 0;
+    }else if (option === "alfabetoReversa"){
+      if (a.title > b.title) {
+        return -1;
+      }
+      if (a.title < b.title) {
+        return 1;
+      }
+      return 0;
     }
   });
+  console.log(resultSort)
   return resultSort;
 };
 export const ordenarPorNumeros = (listaPeliculas,campoOrdenar,direccion) => {//lista pelicualas son la 20 pelicuals campo es donde se desea ordenar(selct)
