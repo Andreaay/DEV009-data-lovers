@@ -5,15 +5,9 @@ import { ordenarPorNumeros } from '../src/data.js';
 describe('Tests de sortAlphabeticYear', () => {
   it('Test para filtrar las peliculas de la A a la Z', () => {
     const peliculas = [
-<<<<<<< HEAD
-      {title: 'My Neighbors the Yamadas'},
-      {title: 'Castle in the Sky'},
-      {title: 'Whisper of the Heart'}
-=======
       {title: 'Castle in the Sky'},
       {title: 'Whisper of the Heart'},
       {title: 'My Neighbors the Yamadas'},
->>>>>>> f2fb5234307399d99b2fc07210d665ff1649bc7e
     ]
     const resultadoEsperado =[
       {title: 'Castle in the Sky'},
