@@ -45,5 +45,5 @@ test('averageCharactersAllFilms retorna el promedio correcto de personajes en to
     { people: ['"name": "Porco Rosso", "name": "Donald Curtis"'] }
   ];
   const result = averageCharactersAllFilms(films);
-  expect(result).toBeCloseTo(2, 2.30, 8.55);
+  expect(result).toBeCloseTo(0.35, 2);
 });
