@@ -1,7 +1,6 @@
 import { filterDirector } from '../src/data.js';
 import { sortAlphabeticYear } from '../src/data.js';
 import { ordenarPorNumeros } from '../src/data.js'; 
-
 describe('Tests de sortAlphabeticYear', () => {
   it('Test para filtrar las peliculas de la A a la Z', () => {
     const peliculas = [
@@ -14,13 +13,13 @@ describe('Tests de sortAlphabeticYear', () => {
       {title: 'My Neighbors the Yamadas'},
       {title: 'Whisper of the Heart'}
     ]
-    const peliculasfiltradas = sortAlphabeticYear (peliculas, 'alfabeto');
+    const peliculasfiltradas = sortAlphabeticYear(peliculas,'alfabeto');
     expect(peliculasfiltradas).toEqual(resultadoEsperado);
   });
   it('Test para filtrar las películas de la Z a la A', () => {
     const peliculas =[
-      {title: 'Whisper of the Heart,'},
       {title: 'The Wind Rises'},
+      {title: 'Whisper of the Heart,'},
       {title: 'Castle in the Sky'}
     ]
     const resultadoEsperado =[
@@ -37,12 +36,12 @@ describe('Tests de sortAlphabeticYear', () => {
   it('Test para filtrar las peliculas de la más nueva a la más vieja', () => {
     const peliculas = [
       {
-        "title": "When Marnie Was There",
-        "release_date": "2014",
-      },
-      {
         "title": "Princess Mononoke",
         "release_date": "1997",
+      },
+      {
+        "title": "When Marnie Was There",
+        "release_date": "2014",
       },
       {
         "title": "Castle in the Sky",
@@ -69,12 +68,13 @@ describe('Tests de sortAlphabeticYear', () => {
   it('Test para filtrar las peliculas de la más vieja a la más nueva', () => {
     const peliculas = [
       {
-        "title": "Castle in the Sky",
-        "release_date": "1986",
-      },
-      {
+        
         "title": "Princess Mononoke",
         "release_date": "1997",
+      },
+      {
+        "title": "Castle in the Sky",
+        "release_date": "1986",
       },
       {
         "title": "When Marnie Was There",
